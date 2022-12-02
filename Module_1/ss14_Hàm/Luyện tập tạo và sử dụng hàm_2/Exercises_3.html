@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<p id="name"></p>
+<script>
+    function giaiThua(n) {
+        let c = 1;
+        for (let i = 1; i <= n; i++) {
+            c *= i;
+        }
+        document.write(n + '! = ' + c);
+    }
+    let a = +prompt("Nhập vào giá trị:");
+    giaiThua(a);
+</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Luyện tập cấu trúc điều kiện 1_5</title>
+</head>
+<body>
+  <script>
+    let a = parseFloat(prompt('Nhập điểm kiểm tra'));
+    let b = parseFloat(prompt('Nhập điểm thi giữa kỳ'));
+    let c = parseFloat(prompt('Nhập điểm thi cuối kỳ'));
+    let d = (a + b + c) / 3;
+      if (d > 9) {
+          alert('là học sinh loại A')
+      } else if (d > 7.5) {
+          alert('là học sinh loại B')
+      } else if (d > 6) {
+          alert('là học sinh loại C')
+      } else {
+          alert('là học sinh loại D')
+      }
+  </script>
+</body>
+</html>

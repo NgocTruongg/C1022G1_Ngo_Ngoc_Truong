@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script>
+  let str1 = prompt("Nhập chuỗi a bất kì:");
+  let str2 = prompt("Nhập chuỗi b bất kì:");
+  let arr1 = str1.split('');
+  let arr2 = str2.split('');
+  function kiemTra(a,b) {
+      let count = 0;
+      let result = "";
+      for (let i = 0; i < arr1.length; i++) {
+          let array = arr2.indexOf(arr[i]);
+          if (array != -1) {
+            result += arr2.splice(array, 1);
+            count++;
+          }
+      }
+      return "Các kí tự chung là: " + result + "Số lần xuất hiện là:" + count;
+  }
+  document.write(kiemTra(arr1,arr2));
+
+</script>
+</body>
+</html>

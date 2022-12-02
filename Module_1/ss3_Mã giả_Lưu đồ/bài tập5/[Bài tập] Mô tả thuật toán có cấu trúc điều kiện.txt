@@ -1,0 +1,17 @@
+Begin
+	INPUT a = điểm thi
+	IF a ≥ 75
+	Display "học sinh loại A”
+	
+	Else a ≥ 60
+	Display "học sinh loại B”
+	
+	Else a ≥ 45
+	Display "học sinh loại C”
+	
+	Else a ≥ 30
+	Display "học sinh loại D”
+	
+	Else a < 30
+	Display "học sinh loại E”
+End.

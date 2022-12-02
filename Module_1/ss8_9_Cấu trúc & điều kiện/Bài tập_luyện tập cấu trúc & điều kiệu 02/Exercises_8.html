@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Nhập số tuổi</title>
+</head>
+<body>
+  <h1>Nhập số tuổi của bạn:</h1>
+  <label>Số tuổi </label>
+  <input type="text" id="age">
+  <button onclick="print()">In ra kết quả</button>
+  <p id="Resutl"></p>
+  <script>
+    function print() {
+        let age = document.getElementById('age').value;
+        let a = '';
+        if (age > 0 && age <= 10) {
+            a = 'Bạn là trẻ nhỏ';
+        } else if (age > 10 && age <= 18) {
+            a = 'Bạn là trẻ vị thành niên'
+        } else if (age > 18 && age <= 28) {
+            a = 'Bạn là thanh niên';
+        } else if (age > 28 && age <= 50) {
+            a = 'Bạn là người trung niên'
+        } else if (age > 50 && age <= 120) {
+            a = 'Bạn là người già'
+        } else {
+            a = 'Bạn sống quá lâu rồi'
+        } document.getElementById('Resutl').innerHTML= a;
+    }
+  </script>
+</body>
+</html>

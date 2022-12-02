@@ -1,0 +1,8 @@
+Begin
+	Input điểm Toán = 9
+	Input điểm Lý = 10
+	Input điểm Hóa = 8
+	TB = (9+10+8)/3
+	Display TB
+End 
+end

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script>
+    function findMaxNumber(n) {
+        for (let i = 1; i < n.length; i++) {
+            if (n.length !== 4) {
+                document.write(-1);
+                return;
+            } else {
+                if (n[i] > n[i - 1]) {
+                    n.splice(i - 1, 1);
+                    document.write(n.join(''));
+                    return;
+                }
+                if (n[i] < n[i - 1]) {
+                    n.splice(i, 1);
+                    document.write(n.join(''));
+                    return;
+                }if (n[i] > n[i].length - 1) {
+                    n.split(i.length - 1)
+                }
+            }
+        }
+    }
+
+    let b = prompt("Nhập vào số bạn muốn");
+    let c = b.split('');
+    findMaxNumber(c);
+</script>
+</body>
+</html>

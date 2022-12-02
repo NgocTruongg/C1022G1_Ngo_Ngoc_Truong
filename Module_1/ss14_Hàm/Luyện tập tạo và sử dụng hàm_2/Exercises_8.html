@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script>
+    let a = [1, 2, 3, 4, 5];
+    function convert(arr) {
+        count = 0;
+        let b = [];
+        for (let i = 4; i >= 0; i--) {
+            b[count] = a[i];
+            count++;
+        }
+        return b;
+    }    document.write("Mảng đảo ngược là: " + convert(a));
+
+    // cách 2: em bí cái này, tutor giải giúp em phần này được không ạ?
+    // function daoSo(arr2) {
+    //     let count = 0;
+    //     let b = [];
+    //     for (let i = arr2.length - 1; i >= 0; i--) {
+    //         b[count] = a[i];
+    //         count++;
+    //     }
+    //     return b;
+    // }
+    //
+    // let n = +prompt("Nhập giá trị mảng:");
+    // document.write("Mảng đảo ngược là: " + daoSo(n));
+</script>
+</body>
+</html>

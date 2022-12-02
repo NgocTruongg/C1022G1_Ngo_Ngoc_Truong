@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script>
+    function check(month, year) {
+        let date = '';
+        let result = '';
+        switch (month) {
+            case 1:
+            case 3:
+            case 5:
+            case 7:
+            case 8:
+            case 10:
+            case 12:
+                date = "có 31 ngày";
+                break;
+            case 4:
+            case 6:
+            case 9:
+            case 11:
+                date = "Có 30 ngày";
+                break;
+            case 2:
+                date = "Có 28 hoặc 29 ngày";
+                break;
+            default:
+                date = "Vui lòng nhập lại";
+        }
+        if (year % 4 === 0) {
+            result = "Năm nhuận nên có 366 ngày";
+        } else {
+            result = "Năm không nhuận nên có 365 ngày";
+        }
+        return date + "<br>" + result;
+    }
+
+    let days = +prompt("Nhập tháng");
+    let year = +prompt("Nhập năm");
+    document.write(check(days, year));
+</script>
+</body>
+</html>

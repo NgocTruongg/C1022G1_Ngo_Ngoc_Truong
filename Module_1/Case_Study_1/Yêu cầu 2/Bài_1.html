@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script>
+    let a = +prompt("Nhập vào thu nhập hàng tháng của bạn: ");
+    let tax;
+    let wage;
+    if (a >= 15000) {
+        tax = a*0.2;
+        wage = a - tax;
+    } else if(a >= 7000 & a < 15000) {
+        tax = a*0.1;
+        wage = a - tax;
+    } else if(a <= 7000) {
+        tax = a*0.05;
+        wage = a - tax;
+    } document.write("Thuế thu nhập cá nhân là: " + tax + " VNĐ" + "<br>" + "Thu nhập sau thuế của bạn là:" + wage + " VNĐ");
+</script>
+</body>
+</html>

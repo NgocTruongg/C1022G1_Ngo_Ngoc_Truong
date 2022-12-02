@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script>
+    function tangDanDeu(arr) {
+        let temp = arr[1] - arr[0];
+        let temp1 = 0;
+        for (let i = 0; i < arr.length - 1; i++) {
+            temp1 = arr[i + 1] - arr[i];
+            if (arr[i] > arr[i+1] || temp1 !== temp) {
+                return "NO"
+            }
+        }
+        return "yes"
+    }
+    let array = [];
+    let a = prompt("Nhập độ dài mảng:");
+    for (let i = 0; i < a; i++) {
+        array[i] = prompt("Nhập giá trị mảng" + i);
+    }
+    document.write("Mảng vừa nhập là " + array + "<br>");
+    document.write(tangDanDeu(array));
+</script>
+</body>
+</html>

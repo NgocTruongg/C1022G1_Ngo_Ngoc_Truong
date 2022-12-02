@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = +prompt("Nhập mảng k quá 50 phần tử");
+    let count = 0;
+    let sum = 0;
+    let temp = 0;
+    for (let i = 0; i < 50; i++) {
+        arr[i] = +prompt("Nhập các phần tử" + i);
+    }
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] % 3 === 0) {
+            sum += arr[i];
+            count++;
+        }temp = sum/count;
+    }
+
+    document.write("Tổng trung bình cộng của các số chia hết cho 3 là: " + temp);
+</script>
+</body>
+</html>

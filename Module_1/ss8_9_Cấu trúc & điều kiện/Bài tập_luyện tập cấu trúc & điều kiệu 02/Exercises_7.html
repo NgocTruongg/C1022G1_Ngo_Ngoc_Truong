@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Giải phương trình bậc 2</title>
+</head>
+<body>
+  <h1>Giải phương trình bậc 2</h1>
+  <br>
+  <div>
+    <label>a =</label>
+    <input type="text" id="a">
+  </div>
+  <br>
+  <div>
+    <label>b =</label>
+    <input type="text" id="b">
+  </div>
+  <br>
+  <div>
+    <label>c =</label>
+    <input type="text" id="c">
+  </div>
+  <br>
+    <button onclick="ok()">Kết quả</button>
+<p id="Resutl"></p>
+  <script>
+    function ok() {
+        let a = document.getElementById('a').value;
+        let b = document.getElementById('b').value;
+        let c = document.getElementById('c').value;
+        let d = (b * b) - 4 * a * c;
+        let e = '';
+        if (d < 0) {
+            e = 'Phương trình vô nghiệm';
+        } else if (d == 0) {
+            let x1 = -b / 2 * a;
+            let x2 = -b / 2 * a;
+            e = 'Phương trình có nghiệm kép là: ' + x1 + '=' + x2;
+        } else {
+            let x1 = (-b + Math.sqrt(d)) / 2 * a;
+            let x2 = (-b - Math.sqrt(d)) / 2 * a;
+            e = 'Giá trị của x1 và x2 là:' + x1 + 'và' + x2;
+        }
+        document.getElementById('Resutl').innerHTML= e
+    }
+  </script>
+</body>
+</html>

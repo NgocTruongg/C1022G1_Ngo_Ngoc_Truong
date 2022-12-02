@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hiển thị số nguyên tố</title>
+</head>
+<body>
+<script>
+  let numb = prompt('Nhập số nguyên');
+    let result;
+    let count = 0;
+    while (count < 2) {
+        result = true;
+        numb = prompt('Nhập lại số nguyên');
+        for (let i = 2; i < numb; i++) {
+            if (numb % i == 0) {
+                result = false;
+                break;
+            }
+        }
+        if (result) {
+            result = true;
+            document.write(numb + 'Số nguyên tố <br>')
+            count++;
+        }
+    }
+</script>
+</body>
+</html>

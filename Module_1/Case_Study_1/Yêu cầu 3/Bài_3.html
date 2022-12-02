@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script>
+    let arrayA = [];
+    let arrayB = [];
+    let max2;
+    let a = +prompt("Nhập độ dài mảng A:");
+    for (let i = 0; i < a; i++) {
+        arrayA[i] = +prompt(`Nhập vào giá trị mảng A: ${i}`);
+    }
+    let b = +prompt("Nhập độ dài mảng B:");
+    for (let i = 0; i < b; i++) {
+        arrayB[i] = +prompt(`Nhập vào giá trị mảng B: ${i}`);
+    }
+    let temp = arrayA[0]/arrayB[0];
+    for (let i = 1; i < arrayA.length; i++) {
+        if (temp < arrayA[i]/arrayB[i]) {
+            temp = arrayA[i]/arrayB[i];
+            max2 = arrayA[i] + '/' + arrayB[i] +  "là phân số lớn nhất " + " tại vị trí thứ: " + i;
+        }
+    }
+    document.write('</br>' + max2);
+</script>
+</body>
+</html>

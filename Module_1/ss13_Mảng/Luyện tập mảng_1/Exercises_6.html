@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script>
+    let a = [];
+    let c;
+    for (let i = 0; i < 10; i++) {
+        a[i] = prompt("Nhập vào giá trị cho mảng: ");
+    }
+    let v = prompt("Nhập vào số nguyên V :");
+        c = a.indexOf(v);
+        if (c != -1) {
+            document.write("V is in the array <br>");
+        } else {
+            document.write("V is not in the array <br>");
+        }
+</script>
+</body>
+</html>

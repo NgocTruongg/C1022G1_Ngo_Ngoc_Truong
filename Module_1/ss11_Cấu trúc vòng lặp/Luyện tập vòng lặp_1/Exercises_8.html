@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+  <button onclick="start()">Bắt đầu</button>
+  <script>
+    function start() {
+      let a = +prompt("Nhập vào khoảng bạn muốn đoán:");
+      let b = Math.floor(Math.random() * a);
+      for (let c = 1; c <= 5; c++) {
+          let d = prompt("Nhập số bạn đoán:");
+          if (b == d) {
+              document.write("Bạn đã đoán đúng:");
+              break;
+          } else if (b != d) {
+              if (b > d) {
+                  alert("Số bạn nhập bé hơn:");
+              } else {
+                  alert("Số bạn nhập lớn hơn:");
+              }if (c == 5) {
+                  document.write("Bạn đã hết lượt:")
+            }
+          }
+      }
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<p id="characters"></p>
+<script>
+    let a = prompt("Nhập chuỗi các kí tự trong bảng chữ cái tiếng anh: ");
+    switch (a) {
+        case "O":
+        case "U":
+        case "I":
+        case "A":
+        case "E":
+        case "o":
+        case "u":
+        case "i":
+        case "a":
+        case "e":
+            document.getElementById("characters").innerHTML = a + " là nguyên âm";
+            break;
+        default: {
+            document.getElementById("characters").innerHTML = a + " là phụ âm";
+        }
+    }
+</script>
+</body>
+</html>

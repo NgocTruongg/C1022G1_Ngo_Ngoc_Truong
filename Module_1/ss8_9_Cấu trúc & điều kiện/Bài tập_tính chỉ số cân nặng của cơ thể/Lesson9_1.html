@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tính chỉ số cân nặng</title>
+</head>
+<body>
+  <h1>Tính chỉ số cân nặng</h1>
+  <table>
+    <tr>
+      <td>Nhập cân nặng: (Kg)</td>
+      <td><input type="text" id="weight"></td>
+    </tr>
+    <tr>
+      <td>Nhập chiều cao: (m)</td>
+      <td><input type="text" id="height"></td>
+    </tr>
+    <tr>
+      <td><button type="button" id="button" onclick="cal()">Kiểm tra</button></td></td>
+    </tr>
+  </table>
+  <p id="index"></p>
+  <script>
+    function cal() {
+      let weight =document.getElementById("weight").value;
+      let height =document.getElementById("height").value;
+      let bmi = weight / (height * 2);
+      let result = "";
+      if (bmi <18.5)
+          result = "Underweight"
+        else if (bmi < 25)
+            result = "Normal"
+        else if (bmi < 30)
+            result = "Overweight"
+        else
+            result = "Obese"
+        document.getElementById("index").innerHTML= bmi + result
+    }
+
+  </script>
+</body>
+</html>

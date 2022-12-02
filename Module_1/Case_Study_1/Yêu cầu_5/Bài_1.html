@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script>
+    let array = [[1, 2, 3, 4, 5], [2, 4, 6, 8, 21]];
+    let sum = 0;
+    for (let i = 0; i < array.length; i++) {
+        for (let k = 0; k < array[i].length; k++) {
+            if (array[i][k] % 2 === 0) {
+                sum += +array[i][k];
+            }
+        }
+    }
+    document.write("Tổng các số chẵn trong mảng là: " + sum);
+</script>
+</body>
+</html>

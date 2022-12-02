@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<button type="button" onclick="trans()">Tìm tên ngôi sao</button>
+<script>
+    let a = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+    let b = ["UrsaMinor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa", "Major", "Leo"];
+
+    function trans() {
+        let c = prompt("Nhập tên muốn dịch");
+        let d = a.indexOf(c)
+        if (d != -1) {
+            document.write("Tên tương ứng của " + a[d] + " là " + b[d]);
+        } else {
+            document.write("Không tìm thấy tên nhập vào");
+        }
+    }
+</script>
+</body>
+</html>

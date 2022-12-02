@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<input type="text" id="name" placeholder="Nhập bán kính hình tròn">
+<button onclick="area()">Kết quả</button>
+<p id="result"></p>
+<script>
+  function area() {
+  let a = document.getElementById("name").value;
+  let s = a*a*3.14;
+      let b = document.getElementById("name").value;
+  let c = 2*b*3.14;
+  document.getElementById("result").innerHTML = "Diện tích hình tròn là " + s + " ," + "<br>" + "Chu vi hình tròn là " + c;
+  }
+</script>
+</body>
+</html>

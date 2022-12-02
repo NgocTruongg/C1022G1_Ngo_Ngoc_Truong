@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Đếm số 1 đến 99</title>
+</head>
+<body>
+<h2>Đếm số từ 1 đến 100</h2>
+<p id="run"></p>
+<script>
+  let a = "";
+  for (i = 1; i < 100; i++) {
+      a += 'Số ' + i + '<br>';
+      if (i == 99) {
+          alert("đã hoàn thành");
+          break;
+      }
+  }
+  document.getElementById('run').innerHTML= a;
+</script>
+</body>
+</html>

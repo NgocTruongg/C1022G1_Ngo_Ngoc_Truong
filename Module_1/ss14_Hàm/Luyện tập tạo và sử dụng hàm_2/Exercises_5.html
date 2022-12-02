@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script>
+    function declare(a, b, c) {
+        if (a < b && a < c) {
+            return "Là giá trị nhỏ nhất: " + a;
+        } else if (b < a && b < c) {
+            return "là giá trị nhỏ nhất: " + b;
+        } else {
+            return "Là giá trị nhỏ nhất: " + c;
+        }
+    }
+
+    let k = +prompt("Nhập vào giá trị a: ");
+    let i = +prompt("Nhập vào giá trị b: ");
+    let m = +prompt("Nhập vào giá trị c: ");
+    document.write(declare(k, i, m));
+</script>
+</body>
+</html>

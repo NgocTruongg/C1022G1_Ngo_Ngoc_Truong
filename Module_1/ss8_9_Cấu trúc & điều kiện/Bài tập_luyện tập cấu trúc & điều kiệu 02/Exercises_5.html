@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tính diện tích tam giác vuông</title>
+</head>
+<body>
+  <h1>Tính diện tích tam giác vuông</h1>
+  <input type="text" placeholder="Nhập cạnh a" id="a">
+  <input type="text" placeholder="Nhập cạnh b" id="b">
+  <button onclick="ok()">Kiểm tra</button>
+  <p id="result"></p>
+  <script>
+      function ok(){
+          let a = document.getElementById("a").value;
+          let b = document.getElementById("b").value;
+          let s = 1/2*a*b
+          if (s > 0){
+              document.getElementById("result").innerHTML = "Diện tích tam giác vuông là: " + s
+          }else {
+              document.getElementById("result").innerHTML = "Giá trị của cạnh không phù hợp"
+          }
+      }
+
+  </script>
+</body>
+</html>

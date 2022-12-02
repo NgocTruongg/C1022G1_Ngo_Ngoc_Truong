@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script>
+  let array = prompt("Nhập chuỗi bất kì");
+  let arrayTemp = [];
+  let arrayObjec;
+  for (let i = 0; i < array.length; i++) {
+      arrayObjec = arrayTemp.indexOf(array[i]);
+      if (arrayObjec === -1) {
+          arrayTemp.push(array[i]);
+          // arrayTemp.join();
+      }
+  } document.write("Có tổng số " + arrayTemp.length + " khác nhau trong chuỗi, đó là:" + arrayTemp.join());
+</script>
+</body>
+</html>

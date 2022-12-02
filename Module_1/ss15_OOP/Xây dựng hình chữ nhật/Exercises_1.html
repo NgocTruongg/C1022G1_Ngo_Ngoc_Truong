@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<canvas id="rectangleObj" width="200" height="300"></canvas>
+<input type="text" placeholder="Nhập chiều rộng" id="width">
+<input type="text" placeholder="Nhập chiều dài" id="length">
+<button style="margin: 10px" onclick="rawObj()">Vẽ hình</button>
+<script>
+    class Rectangle {
+        constructor(length, width) {
+            this.length = length;
+            this.width = width;
+        }
+
+        setLength(newLength) {
+            this.length = newLength;
+        }
+
+        setWidth(newWidth) {
+            this.width = newWidth;
+        }
+
+        getArea() {
+            return this.width * this.length;
+        }
+
+        getPerimeter() {
+            return (this.width + this.length) * 2;
+        }
+
+        drawRec() {
+            let canvas = document.getElementById('rectangleObj');
+            let ctx = canvas.getContext("2d");
+            ctx.fillStyle = 'red';
+            ctx.fillRect(20, 20, this.width, this.length);
+        }
+    }
+
+    let myRectangle = new Rectangle(200, 300);
+    document.write("<br>" + "Diện tích hình chữ nhật = " + myRectangle.getArea());
+    document.write("<br>" + "Chu vi hình chữ nhật = " + myRectangle.getPerimeter());
+
+    function rawObj() {
+        let newLength = document.getElementById("length").value;
+        let newWidth = document.getElementById("width").value;
+        myRectangle.setLength(newLength);
+        myRectangle.setWidth(newWidth);
+        myRectangle.drawRec();
+    }
+</script>
+</body>
+</html>

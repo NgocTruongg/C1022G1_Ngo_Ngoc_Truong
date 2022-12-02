@@ -1,0 +1,13 @@
+begin
+ input A, B, C
+
+ if ( A > B and A > C)
+  max = A
+ else if (B > A and B > C)
+  max = B
+ else
+  max = C
+ end
+ 
+ display max
+end

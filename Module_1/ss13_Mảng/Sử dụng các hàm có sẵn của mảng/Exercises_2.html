@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>s
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script>
+    let a = [];
+    let b = +prompt("Nhập vào độ dài chuỗi:");
+    let result = []
+    for (let i = 0; i < b; i++) {
+        a[i] = +prompt("Nhập cho phần tử a[' + i + ']: ");
+        if (a[i - 1] % 2 == 0 && a[i] % 2 == 0) {
+            result.push('-', a[i]);
+        } else {
+            result.push(a[i]);
+        }
+    }
+    document.write(result);
+
+</script>
+</body>
+</html>

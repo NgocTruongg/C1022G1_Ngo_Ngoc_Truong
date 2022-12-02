@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tính thuế thu nhập cá nhân</title>
+</head>
+<body>
+<script>
+  let inCome = +prompt('Thu nhập hàng tháng của bạn là: (Triệu đồng).')
+  if (inCome<=5000) {
+      alert('Số tiền thuế phải nộp là:' + (inCome*0.05) + '(Nghìn  đồng).');
+  } else if (inCome>5000 && inCome<=10000) {
+      alert('Số tiền thuế phải nộp là:' + (inCome*0.1) + '(Triệu đồng).');
+  } else if (inCome>10000 && inCome<=18000) {
+      alert('Số tiền thuế phải nộp là:' + (inCome*0.15) + '(Triệu đồng).');
+  } else if (inCome>18000 && inCome<32000) {
+      alert('Số tiền thuế phải nộp là:' + (inCome*0.2) + '(Triệu đồng).');
+  } else if (inCome>32000 && inCome<52000) {
+      alert('Số tiền thuế phải nộp là:' + (inCome*0.25) + '(Triệu đồng).');
+  }
+</script>
+</body>
+</html>

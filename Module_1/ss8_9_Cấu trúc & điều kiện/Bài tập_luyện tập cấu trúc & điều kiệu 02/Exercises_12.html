@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tính lãi ngân hàng</title>
+</head>
+<body>
+<p>Số tiền lãi = số tiền gửi * lãi suất (%năm)/12 *số tháng gửi</p>
+<p id="result"></p>
+<script>
+  let innitMoney = prompt('Số tiền ban đầu:');
+  let month = prompt('Số tháng cho vay:');
+  let interesRate = prompt('Lãi suất hàng tháng:');
+  let profitAmount = innitMoney * interesRate * month/12*month;
+  document.getElementById('result').innerHTML = 'Lãi suất bạn nhận được là:' + profitAmount + 'VNĐ';
+</script>
+</body>
+</html>

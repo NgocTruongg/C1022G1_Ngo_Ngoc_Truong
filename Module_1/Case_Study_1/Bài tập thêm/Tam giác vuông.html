@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script>
+    function checkTriangle(x, y, z) {
+        if (x <= 0 || y <= 0 || z <= 0 || x + y <= z || x + z <= y || z + y <= x) {
+            return document.write("Không phải là cạnh tam giác vuông");
+        } else if (x * x + y * y == z * z || x * x + z * z == y * y || y * y + z * z == x * x) {
+            return document.write("Là 3 cạnh của tam giác vuông");
+        } else {
+            return document.write("Là 3 cạnh của 1 tam giác ");
+        }
+    }
+
+    let a = +prompt("Nhập độ dài cạnh x");
+    let b = +prompt("Nhập độ dài cạnh y");
+    let c = +prompt("Nhập độ dài cạnh z");
+    checkTriangle(a, b, c);
+</script>
+<!--các phương thức hàm-->
+<!--1. split('') = tách phần tử trong chuỗi về mảng: vd 'abc'-->
+<!--2. includes = kiểm tra kí tự có trong chuỗi k. có thì trả về true, k thì fales-->
+<!--push() – thêm 1 phần tử vào cuối mảng-->
+<!--unshift() – thêm vào 1 phần từ vào đầu mảng-->
+<!--pop() – xóa 1 phần tử khỏi cuối mảng-->
+<!--shift() – xóa 1 phần tử khỏi đầu mảng-->
+<!--slice() – Sử dụng copy mảng-->
+<!--Array.isArray() – Kiểm tra có phải mảng hay không?-->
+<!--length – trả về kích cỡ của mảng-->
+<!--sort() – sắp xếp mảng theo alphabet-->
+<!--reverse() – đảo ngược mảng và trả về 1 mảng-->
+
+<!-- - Phân biệt push() và unshift()?-->
+<!--push(): thêm vào phần tử ở cuối mảng-->
+<!--unshift(): thêm vào phần tử ở đầu mảng-->
+
+<!-- - Phân biệt push() và pop()?-->
+<!--push(): thêm vào phần tử ở cuối mảng-->
+<!--pop(): lấy ra phần tử ở cuối mảng-->
+
+<!-- - Phân biệt shift() và unshift()?-->
+<!--shift(): lấy ra phần tử ở đầu mảng-->
+<!--unshift(): thêm vào phần tử ở đầu mảng-->
+
+</body>
+</html>

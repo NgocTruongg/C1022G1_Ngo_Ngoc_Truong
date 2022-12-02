@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script>
+    let a = [];
+    let b = +prompt("Nhập độ dài của mảng: ");
+    let count = 0;
+    for (let i = 0; i < b; i++) {
+        a[i] = prompt(`Nhập vào giá trị của mảng: a[${i}]`);
+        if (a[i] == +a[i]) {
+            count++;
+        }
+    }
+    document.write(count + "<br>");
+</script>
+</body>
+</html>

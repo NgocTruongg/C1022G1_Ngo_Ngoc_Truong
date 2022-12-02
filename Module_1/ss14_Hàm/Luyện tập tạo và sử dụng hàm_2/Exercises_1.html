@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<input type="text" id="name" placeholder="Nhập giá trị">
+<button onclick="square()">Kiểm tra kết quả</button>
+<p id="result"></p>
+<script>
+  function square() {
+  let a = document.getElementById("name").value;
+  let result = Math.pow(a,2);
+  document.getElementById("result").innerHTML = "Bình phương của " + a + " là: " + result;
+  }
+</script>
+</body>
+</html>

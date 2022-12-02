@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script>
+    function uppercase(array) {
+        let arr = array.toLowerCase().split('');
+        let arr1 = [];
+        for (let i = 0; i < arr.length; i++) {
+            arr1.push(arr[i].toUpperCase().charAt(0) + arr[i].slice(1));
+        }
+        return arr1.join('');
+    }
+
+    function kiemTra(arr) {
+        let max = arr[0];
+        for (let i = 1; i < arr.length; i++) {
+            if (arr[i] > max) {
+                max = arr[i]
+            }
+        }
+        return max;
+    }
+    let a = prompt("Nhập vào chuỗi kí tự:");
+    a.toLowerCase();
+    let arr = uppercase(a).split(' ');
+    document.write(uppercase(a) + "<br>");
+    document.write("Từ dài nhất trong chuỗi là: " + kiemTra(arr));
+</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<p id="result"></p>
+<script>
+function thamSo(a,b) {
+    a = +prompt("Nhập vào giá trị a :");
+    b = +prompt("Nhập vào giá trị b :");
+    if (a > b) {
+        return"Giá trị a > b";
+    } else {
+        return a + b
+    }
+} document.getElementById("result").innerHTML = "Tổng của a và b là: " + thamSo();
+</script>
+</body>
+</html>

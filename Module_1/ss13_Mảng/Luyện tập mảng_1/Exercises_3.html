@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script>
+    let h = [1, 4, 6, 10, 12, 13, 18, 4, 2, 3];
+    let max = 0;
+    let sum = 0;
+    for (let i = 0; i < h.length; i++) {
+        sum = sum + h[i];
+        if (i == 1) {
+            max = h[1];
+        } if (h[i] > max) {
+            max = h[i];
+        }
+    }
+    document.write("Số lớn nhất trong mảng là: " + max + "<br>");
+    document.write('Giá trị trung bình trong mảng là: ' + sum/h.length);
+</script>
+</body>
+</html>

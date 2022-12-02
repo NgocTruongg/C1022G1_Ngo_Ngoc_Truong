@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Nhiệt độ phòng</title>
+</head>
+<body>
+<script>
+  for (let i = 1; i < 100; i++) {
+      let temperature = prompt('Nhập vào nhiệt độ phòng:');
+      if (temperature > 100) {
+          alert('Yêu cầu giảm nhiệt độ');
+      } else if (temperature < 20) {
+          alert('Yêu cầu tăng nhiệt độ phòng:');
+      } else {
+          alert('Nhiệt độ bình thường');
+          break;
+      }
+  }
+</script>
+</body>
+</html>

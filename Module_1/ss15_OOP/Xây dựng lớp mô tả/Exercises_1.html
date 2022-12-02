@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script>
+    class Temperature {
+        constructor(c) {
+            this.c = c;
+        }
+
+        cSangF() {
+            document.write("Chuyển đổi từ độ C sang độ F: " + (this.c * 9/5 + 32) + " °F" + "<br>");
+        }
+
+        cSangKenvin() {
+            document.write("Chuyển đổi từ độ C sang độ Kenvin: " + (this.c + 273.15) + " K");
+        }
+    }
+
+    let Temperature2 = new Temperature(+prompt("Nhập vào giá trị độ C = "));
+    Temperature2.cSangF();
+    Temperature2.cSangKenvin();
+</script>
+</body>
+</html>
