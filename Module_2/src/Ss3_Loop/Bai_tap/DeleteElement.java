@@ -1,6 +1,6 @@
-package Ss3_Loop;
+package Ss3_Loop.Bai_tap;
 
-import java.util.Arrays;
+
 import java.util.Scanner;
 
 public class DeleteElement {

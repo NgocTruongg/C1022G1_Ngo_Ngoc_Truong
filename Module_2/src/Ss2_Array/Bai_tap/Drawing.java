@@ -1,4 +1,4 @@
-package Ss2_Array;
+package Ss2_Array.Bai_tap;
 
 import java.util.Scanner;
 
