@@ -2,7 +2,7 @@ package Bai_tap;
 
 import java.util.Scanner;
 
-public class ChuyenDoi {
+public class CurrencyConversion {
     public static void main(String[] args) {
         double usd;
         Scanner scanner = new Scanner(System.in);

@@ -2,7 +2,7 @@ package Bai_tap;
 
 import java.util.Scanner;
 
-public class DocSoThanhChu {
+public class ChangeNumberToLetter {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Nhập số cần chuyển đổi: ");

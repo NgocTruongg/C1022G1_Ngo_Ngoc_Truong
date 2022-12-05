@@ -3,7 +3,7 @@ package Bai_tap;
 
 import java.util.Scanner;
 
-public class HienThiLoiChao {
+public class ShowGreetings {
     public static void main(String[] args) {
         String name;
         Scanner scanner = new Scanner(System.in);
