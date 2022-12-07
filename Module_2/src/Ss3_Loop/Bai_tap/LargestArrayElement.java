@@ -18,7 +18,7 @@ public class LargestArrayElement {
         }
         int indexRow = 0;
         int indexCol = 0;
-        double max = 0;
+        int max = arr[0][0];
         for (int i = 0; i < row; i++) {
             for (int j = 0; j < col; j++) {
                 if (max < arr[i][j]) {
@@ -28,7 +28,7 @@ public class LargestArrayElement {
                 }
             }
         }
-        System.out.println("The largest element in the two-dimensional array is :" + max);
+        System.out.println("The largest element in the two-dimensional array is : " + max);
         System.out.println("Index row is: " + indexRow);
         System.out.println("Index col is: " + indexCol);
     }

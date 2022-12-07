@@ -17,16 +17,15 @@ public class SumColArray {
                 arr[i][k] = Integer.parseInt(sc.nextLine());
             }
         }
-        System.out.println("Enter array just entered í: ");
-        for (int i = 0; i < row; i++) {
-            System.out.println(Arrays.toString(arr[i]));
-        }
-        System.out.println("sum the elements of which column?");
-        int num = Integer.parseInt(sc.nextLine());
+        int column;
+        do {
+            System.out.println("Enter the column position you want : ");
+            column = Integer.parseInt(sc.nextLine());
+        } while (column < 0 || column > col - 1);
         int sum = 0;
         for (int i =0; i < arr.length; i++) {
-             sum += arr[i][num];
+             sum += arr[i][column];
         }
-        System.out.println("sum of the elements of " + num + "column is: " + sum );
+        System.out.println("sum of the elements of " + column + "column is: " + sum );
     }
 }
