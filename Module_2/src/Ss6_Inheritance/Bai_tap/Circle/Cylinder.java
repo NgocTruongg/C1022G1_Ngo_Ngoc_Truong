@@ -1,12 +1,11 @@
 package Ss6_Inheritance.Bai_tap.Circle;
 
-import Ss6_Inheritance.Bai_tap.Circle.Circle;
-
 public class Cylinder extends Circle {
+    private static final boolean filled = true;
     private double height = 1.0;
 
     public Cylinder(double radius, String color, double height) {
-        super(radius, color);
+        super(radius, color, filled);
         this.height = height;
     }
 

@@ -5,9 +5,16 @@ public class Circle {
     private String color;
 
 
-    public Circle(double radius, String color) {
+    public Circle(double radius, String color, boolean filled) {
         this.radius = radius;
         this.color = color;
+    }
+
+    public Circle(double radius) {
+    }
+
+    public Circle() {
+
     }
 
     public double getRadius() {
