@@ -1,13 +1,10 @@
 package Ss7_AbstractClass_Interface.Bai_tap.Interface_Colorsizeable;
 
-public abstract class Shape implements IColorable {
-    private String color = "blue";
-    private boolean filled = true;
+public abstract class Geometry {
+    private String color;
+    private boolean filled;
 
-    public Shape() {
-    }
-
-    public Shape(String color, boolean filled) {
+    public Geometry(String color, boolean filled) {
         this.color = color;
         this.filled = filled;
     }
@@ -30,9 +27,9 @@ public abstract class Shape implements IColorable {
 
     @Override
     public String toString() {
-        return "A Shape with color of "
-                + getColor()
-                + " and "
-                + (isFilled() ? "filled" : "not filled");
+        return "Geometry{" +
+                "color='" + color + '\'' +
+                ", filled=" + filled +
+                '}';
     }
 }

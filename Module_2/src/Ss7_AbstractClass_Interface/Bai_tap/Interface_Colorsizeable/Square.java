@@ -1,42 +1,37 @@
 package Ss7_AbstractClass_Interface.Bai_tap.Interface_Colorsizeable;
 
-public class Square extends Shape implements IColorable {
-    private double edge;
+public class Square extends Geometry implements IColorable {
+    private double side;
 
-    public Square(double edge) {
-        this.edge = edge;
-    }
-
-    public Square(String color, boolean filled, double edge) {
+    public Square(String color, boolean filled, double side) {
         super(color, filled);
-        this.edge = edge;
+        this.side = side;
     }
 
-    public double getEdge() {
-        return edge;
+    public double getSide() {
+        return side;
     }
 
-    public void setEdge(double edge) {
-        this.edge = edge;
+    public void setSide(double side) {
+        this.side = side;
     }
 
     public double getArea() {
-        return Math.pow(this.edge, 2);
+        return this.side * this.side;
     }
 
     @Override
     public String toString() {
-        return "Area of Square is: "
-                + getArea() + ". "
-                + super.toString();
+        return "Area of this square: " + this.getArea();
     }
+
 
     @Override
     public void howToCloro() {
-        if (isFilled()) {
-            System.out.println("Color all four sides");
+        if (super.isFilled()) {
+            System.out.println("Color " + super.getColor() + " all four sides");
         } else {
-            System.out.println("No color !!!");
+            System.out.println("No color");
         }
     }
 }
