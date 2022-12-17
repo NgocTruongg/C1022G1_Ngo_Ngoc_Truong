@@ -1,11 +1,12 @@
-package Ss12_Framework.Bai_tap.PracticeArrayListLinkedList.Model.service;
+package Ss12_Framework.Bai_tap.JavaCollectionFramework.Model.service;
 
-import Ss12_Framework.Bai_tap.PracticeArrayListLinkedList.Model.model.Product;
+import Ss12_Framework.Bai_tap.JavaCollectionFramework.Model.model.Product;
 
 public interface IProductManager {
-    void menu();
 
     void them(Product product);
+
+    void xoa(int index);
 
     void change(int index, Product product);
 
@@ -14,5 +15,4 @@ public interface IProductManager {
     void find(String name);
 
     void sort();
-
 }
