@@ -35,13 +35,12 @@ public class MyList<E> {
     }
 
     //    phương thức add 1 phần tử vào MyList:
-    public boolean add(E e) {
+    public void add(E e) {
         if (elements.length == size) {
             this.ensureCapacity(5);
         }
         elements[size] = e;
         size++;
-        return true;
     }
 
     //      Phương thức thêm 1 phần tử vào vị trí index:
