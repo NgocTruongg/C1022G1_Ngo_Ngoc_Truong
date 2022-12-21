@@ -3,7 +3,7 @@ package Ss14_SortingAlgorithms.Bai_tap;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class IllustrationInsertionSort {
+public class IllustrationInsertionSortAlgorithm {
     public static void insertionSort(int[] array) {
         int pos, x;
         for (int i = 0; i < array.length; i++) {

@@ -3,7 +3,7 @@ package Ss14_SortingAlgorithms.Bai_tap;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class InstallSortingAlgorithm {
+public class InsertionSortingAlgorithm {
     public static void sort(int[] array) {
         for (int i = 0; i < array.length; i++) {
             int currentElement = array[i];
