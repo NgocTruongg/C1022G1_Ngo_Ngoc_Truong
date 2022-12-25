@@ -10,6 +10,7 @@ public class ProductRepository implements IProductRepository {
     private static final String FILE_PATH = "D:\\Codegym\\C1022G1_Ngo_Ngoc_Truong\\Module_2\\src\\Ss17_IO_BinaryFile_Serialization\\Bai_tap\\Controller\\text.dat";
 
     static List<Product> productList = new ArrayList<>();
+
     public static void writeObject(List<Product> product) {
         FileOutputStream fos = null;
         try {
@@ -31,9 +32,9 @@ public class ProductRepository implements IProductRepository {
 
     public static List<Product> readObjectList() {
         try {
-            FileInputStream fileInputStream =new FileInputStream(FILE_PATH);
-            ObjectInputStream objectInputStream =new ObjectInputStream(fileInputStream);
-            List<Product> productList =(List<Product>) objectInputStream.readObject();
+            FileInputStream fileInputStream = new FileInputStream(FILE_PATH);
+            ObjectInputStream objectInputStream = new ObjectInputStream(fileInputStream);
+            List<Product> productList = (List<Product>) objectInputStream.readObject();
             return productList;
         } catch (FileNotFoundException e) {
             e.printStackTrace();
@@ -53,13 +54,13 @@ public class ProductRepository implements IProductRepository {
         productList.add(new Product(4, "GLC200", "Mercedes", 1700000, "SUV"));
         productList.add(new Product(5, "Civic", "Honda", 800000, "Sedan"));
         productList.add(new Product(6, "320i", "BMW", 4000000, "Sedan"));
-            writeObject( productList);
+        writeObject(productList);
 
     }
 
 
     @Override
-    public void add(Product product){
+    public void add(Product product) {
         productList.add(product);
 
         writeObject(productList);
@@ -67,18 +68,21 @@ public class ProductRepository implements IProductRepository {
 
     @Override
     public void display() {
-        for (Product c: productList) {
+        writeObject(productList);
+        for (Product c : productList) {
             System.out.println(c);
         }
     }
 
     @Override
-    public void SearchName(String string) {
-        for (Product c: productList) {
+    public Product SearchName(String string) {
+        for (Product c : productList) {
             if (c.getName().contains(string)) {
-                System.out.println(c);
+                writeObject(productList);
+                return c;
             }
         }
+        return null;
     }
 
 }

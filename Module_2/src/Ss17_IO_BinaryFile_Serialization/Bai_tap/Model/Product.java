@@ -21,9 +21,6 @@ public class Product implements Serializable {
     }
     private static final long UID = 2;
 
-    public Product(int id, String newName, String newManufacturer, double newPrice) {
-    }
-
     public int getId() {
         return id;
     }

@@ -2,12 +2,10 @@ package Ss17_IO_BinaryFile_Serialization.Bai_tap.Repository;
 
 import Ss17_IO_BinaryFile_Serialization.Bai_tap.Model.Product;
 
-import java.io.IOException;
-
 public interface IProductRepository {
 
-    void add(Product product) throws IOException;
+    void add(Product product);
     void display();
-    void SearchName(String string);
+    Product SearchName(String string);
 
 }
