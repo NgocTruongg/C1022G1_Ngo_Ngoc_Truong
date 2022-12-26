@@ -1,4 +1,4 @@
 package CaseStudy_Module2.Services;
 
-public interface IFuramaService {
+public interface ICustomerService {
 }

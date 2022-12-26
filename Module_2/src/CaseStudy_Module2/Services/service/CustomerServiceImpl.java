@@ -1,4 +1,4 @@
 package CaseStudy_Module2.Services;
 
-public class FuramaService {
+public class CustomerServiceImpl {
 }
