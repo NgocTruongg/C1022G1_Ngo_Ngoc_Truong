@@ -1,4 +1,6 @@
-package CaseStudy_Module2.Models;
+package CaseStudy_Module2.Models.Facility;
+
+import CaseStudy_Module2.Models.Facility.Facility;
 
 public class Room extends Facility {
 
@@ -15,5 +17,17 @@ public class Room extends Facility {
 
     public void setFreeService(String freeService) {
         this.freeService = freeService;
+    }
+
+    @Override
+    public String toString() {
+        return "Room{" +
+                "freeService='" + freeService + '\'' +
+                ", name='" + name + '\'' +
+                ", s=" + s +
+                ", rentalCosts=" + rentalCosts +
+                ", amountOfPeople=" + amountOfPeople +
+                ", rentalType='" + rentalType + '\'' +
+                '}';
     }
 }

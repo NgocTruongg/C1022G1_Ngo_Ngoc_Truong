@@ -1,4 +1,6 @@
-package CaseStudy_Module2.Services;
+package CaseStudy_Module2.Services.service;
 
-public class CustomerServiceImpl {
+import CaseStudy_Module2.Services.IService.ICustomerService;
+
+public class CustomerServiceImpl implements ICustomerService {
 }

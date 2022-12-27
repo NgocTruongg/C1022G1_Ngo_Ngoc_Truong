@@ -1,4 +1,6 @@
-package CaseStudy_Module2.Services;
+package CaseStudy_Module2.Services.service;
 
-public class FacilityServiceImpl {
+import CaseStudy_Module2.Services.IService.IFacilityService;
+
+public class FacilityServiceImpl implements IFacilityService {
 }

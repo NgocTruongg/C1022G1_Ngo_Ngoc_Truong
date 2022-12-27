@@ -1,7 +1,7 @@
-package CaseStudy_Module2.Models.Person;
+package CaseStudy_Module2.Models;
 
 public class Booking {
-    private int idBooking;
+    private String idBooking;
     private String startDay;
     private String endDate;
     private String idCustomer;
@@ -10,7 +10,7 @@ public class Booking {
     public Booking() {
     }
 
-    public Booking(int idBooking, String startDay, String endDate, String idCustomer, String serviceName) {
+    public Booking(String idBooking, String startDay, String endDate, String idCustomer, String serviceName) {
         this.idBooking = idBooking;
         this.startDay = startDay;
         this.endDate = endDate;
@@ -18,11 +18,11 @@ public class Booking {
         this.serviceName = serviceName;
     }
 
-    public int getIdBooking() {
+    public String getIdBooking() {
         return idBooking;
     }
 
-    public void setIdBooking(int idBooking) {
+    public void setIdBooking(String idBooking) {
         this.idBooking = idBooking;
     }
 

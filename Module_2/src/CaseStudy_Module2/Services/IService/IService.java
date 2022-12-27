@@ -1,4 +1,4 @@
-package CaseStudy_Module2.Services;
+package CaseStudy_Module2.Services.IService;
 
 public interface IService {
 }

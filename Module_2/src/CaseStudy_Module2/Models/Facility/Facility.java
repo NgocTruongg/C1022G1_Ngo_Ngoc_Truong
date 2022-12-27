@@ -1,4 +1,4 @@
-package CaseStudy_Module2.Models;
+package CaseStudy_Module2.Models.Facility;
 
 public abstract class Facility {
     protected String name;

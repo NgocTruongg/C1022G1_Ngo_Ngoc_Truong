@@ -1,6 +1,8 @@
-package CaseStudy_Module2.Models;
+package CaseStudy_Module2.Models.Facility;
 
-public class Villa extends Facility{
+import CaseStudy_Module2.Models.Facility.Facility;
+
+public class Villa extends Facility {
     private String roomStandard; // Tiêu chuẩn phòng
     private double sPool; // diện tích hồ bơi
     private int numberFloors; // số tầng
@@ -34,5 +36,19 @@ public class Villa extends Facility{
 
     public void setNumberFloors(int numberFloors) {
         this.numberFloors = numberFloors;
+    }
+
+    @Override
+    public String toString() {
+        return "Villa{" +
+                "roomStandard='" + roomStandard + '\'' +
+                ", sPool=" + sPool +
+                ", numberFloors=" + numberFloors +
+                ", name='" + name + '\'' +
+                ", s=" + s +
+                ", rentalCosts=" + rentalCosts +
+                ", amountOfPeople=" + amountOfPeople +
+                ", rentalType='" + rentalType + '\'' +
+                '}';
     }
 }
