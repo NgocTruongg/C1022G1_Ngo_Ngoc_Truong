@@ -1,8 +1,8 @@
 package CaseStudy_Module2.Services.service;
 
 import CaseStudy_Module2.Models.Person.Employee;
-import CaseStudy_Module2.Repository.EmployeeRepository;
-import CaseStudy_Module2.Repository.IEmployeeRepository;
+import CaseStudy_Module2.Repository.EmployeeManagement.EmployeeRepository;
+import CaseStudy_Module2.Repository.EmployeeManagement.IEmployeeRepository;
 import CaseStudy_Module2.Services.IService.IEmployeeService;
 
 public class EmployeeServiceImpl implements IEmployeeService {

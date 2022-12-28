@@ -1,8 +1,8 @@
-package CaseStudy_Module2.Services.IService;
+package CaseStudy_Module2.Repository.CustomerManagement;
 
 import CaseStudy_Module2.Models.Person.Customer;
 
-public interface ICustomerService {
+public interface ICustomerRepository {
     void display();
     void add (Customer customer);
     Customer findById (String id);

@@ -1,4 +1,4 @@
-package CaseStudy_Module2.Repository;
+package CaseStudy_Module2.Repository.EmployeeManagement;
 
 import CaseStudy_Module2.Models.Person.Employee;
 

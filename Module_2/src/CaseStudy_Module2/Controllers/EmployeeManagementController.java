@@ -1,13 +1,12 @@
 package CaseStudy_Module2.Controllers;
 
 import CaseStudy_Module2.Models.Person.Employee;
-import CaseStudy_Module2.Repository.EmployeeRepository;
 import CaseStudy_Module2.Services.IService.IEmployeeService;
 import CaseStudy_Module2.Services.service.EmployeeServiceImpl;
 
 import java.util.Scanner;
 
-public class EmployeeController {
+public class EmployeeManagementController {
 
     public void employeeManagement() {
         IEmployeeService iEmployeeService = new EmployeeServiceImpl();
@@ -62,8 +61,8 @@ public class EmployeeController {
                 case 4:
                     System.out.println("Enter the Id Employee:");
                     String newOldId = scanner.nextLine();
-                    Employee employee = iEmployeeService.finById(newOldId);
-                    if (employee != null) {
+                    Employee eml = iEmployeeService.finById(newOldId);
+                    if (eml != null) {
                         System.out.println("Enter the Name Employee: ");
                         String newName1 = scanner.nextLine();
                         System.out.println("Enter the Employee:");
@@ -82,16 +81,16 @@ public class EmployeeController {
                         String newPosition1 = scanner.nextLine();
                         System.out.println("Enter the Salary Employee: ");
                         String newSalary1 = scanner.nextLine();
-                        employee.setName(newName1);
-                        employee.setDateBirth(newBirthday1);
-                        employee.setSex(newSex1);
-                        employee.setcMND(newCMND1);
-                        employee.setNumberPhone(newPhone1);
-                        employee.setEmail(newEmail1);
-                        employee.setPosition(newPosition1);
-                        employee.setLevel(newLevel1);
-                        employee.setSalary(newSalary1);
-                        iEmployeeService.edit(employee);
+                        eml.setName(newName1);
+                        eml.setDateBirth(newBirthday1);
+                        eml.setSex(newSex1);
+                        eml.setcMND(newCMND1);
+                        eml.setNumberPhone(newPhone1);
+                        eml.setEmail(newEmail1);
+                        eml.setPosition(newPosition1);
+                        eml.setLevel(newLevel1);
+                        eml.setSalary(newSalary1);
+                        iEmployeeService.edit(eml);
                     } else {
                         System.out.println("Id Employee does not exist: ");
                     }
