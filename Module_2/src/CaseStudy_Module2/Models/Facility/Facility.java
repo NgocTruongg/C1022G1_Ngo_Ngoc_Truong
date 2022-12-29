@@ -2,15 +2,15 @@ package CaseStudy_Module2.Models.Facility;
 
 public abstract class Facility {
     protected String name;
-    protected double s; //diện tích sử dụng
-    protected double rentalCosts; //chi phí thuê
+    protected String s; //diện tích sử dụng
+    protected String rentalCosts; //chi phí thuê
     protected int amountOfPeople; // sô lượng người
     protected String rentalType; // Loại cho thuê
 
     public Facility() {
     }
 
-    public Facility(String name, double s, double rentalCosts, int amountOfPeople, String rentalType) {
+    public Facility(String name, String s, String rentalCosts, int amountOfPeople, String rentalType) {
         this.name = name;
         this.s = s;
         this.rentalCosts = rentalCosts;
@@ -26,19 +26,19 @@ public abstract class Facility {
         this.name = name;
     }
 
-    public double getS() {
+    public String getS() {
         return s;
     }
 
-    public void setS(double s) {
+    public void setS(String s) {
         this.s = s;
     }
 
-    public double getRentalCosts() {
+    public String getRentalCosts() {
         return rentalCosts;
     }
 
-    public void setRentalCosts(double rentalCosts) {
+    public void setRentalCosts(String rentalCosts) {
         this.rentalCosts = rentalCosts;
     }
 
@@ -62,8 +62,8 @@ public abstract class Facility {
     public String toString() {
         return "Facility{" +
                 "name='" + name + '\'' +
-                ", s=" + s +
-                ", rentalCosts=" + rentalCosts +
+                ", s='" + s + '\'' +
+                ", rentalCosts='" + rentalCosts + '\'' +
                 ", amountOfPeople=" + amountOfPeople +
                 ", rentalType='" + rentalType + '\'' +
                 '}';

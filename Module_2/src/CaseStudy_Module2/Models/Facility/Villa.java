@@ -7,7 +7,8 @@ public class Villa extends Facility {
     private double sPool; // diện tích hồ bơi
     private int numberFloors; // số tầng
 
-    public Villa(String name, double s, double rentalCosts, int amountOfPeople, String rentalType, String roomStandard, double sPool, int numberFloors) {
+    public Villa(String name, String s, String rentalCosts, int amountOfPeople, String rentalType,
+                 String roomStandard, double sPool, int numberFloors) {
         super(name, s, rentalCosts, amountOfPeople, rentalType);
         this.roomStandard = roomStandard;
         this.sPool = sPool;

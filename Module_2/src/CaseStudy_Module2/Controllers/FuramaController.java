@@ -31,7 +31,8 @@ public class FuramaController {
                 customerManagementController.customerManagement();
                 break;
             case 3:
-
+                FacilityManagementController facilityManagementController = new FacilityManagementController();
+                facilityManagementController.facilityManagement();
                 break;
             case 4:
                 System.out.println("Edit employee:");
@@ -51,4 +52,5 @@ public class FuramaController {
                 System.out.println("Vui lòng chọn lại: ");
         }
     }
+
 }
