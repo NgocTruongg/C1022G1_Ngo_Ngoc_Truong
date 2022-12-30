@@ -35,18 +35,22 @@ public class EmployeeRepository implements IEmployeeRepository {
     }
 
     @Override
-    public void deleteId(String employee) {
+    public void deleteId(String id) {
+
+        int index = -1;
         for (int i = 0; i < employeeList.size(); i++) {
-            if (employeeList.get(i).equals(employee)) {
-                employeeList.remove(employeeList.get(i));
-                break;
+            if (employeeList.get(i).getId().equals(id)) {
+               index = i;
+               break;
             }
         }
+        employeeList.remove(index);
     }
+
 
     @Override
     public Employee finById(String id) {
-        for (Employee c :employeeList) {
+        for (Employee c : employeeList) {
             if (c.getId().equals(id)) {
                 return c;
             }
@@ -54,11 +58,10 @@ public class EmployeeRepository implements IEmployeeRepository {
         return null;
     }
 
-
     @Override
     public void edit(Employee employee) {
         for (int i = 0; i < employeeList.size(); i++) {
-            if (employee.getId().equals(employeeList.get(i).getId())) {
+            if (employeeList.get(i).getId().equals(employee.getId())) {
                 employeeList.set(i, employee);
             }
         }

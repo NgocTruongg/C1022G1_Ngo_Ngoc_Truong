@@ -4,6 +4,7 @@ import CaseStudy_Module2.Models.Facility.Room;
 import CaseStudy_Module2.Models.Facility.Villa;
 import CaseStudy_Module2.Services.IService.IFacilityService;
 import CaseStudy_Module2.Services.service.FacilityServiceImpl;
+import CaseStudy_Module2.Utils.RegexCode;
 
 import java.util.Scanner;
 
@@ -47,35 +48,67 @@ public class FacilityManagementController {
                     int choiceAdd = Integer.parseInt(scanner.nextLine());
                     switch (choiceAdd) {
                         case 1:
-                            System.out.println("Enter Name: ");
-                            String newNameVilla = scanner.nextLine();
-                            System.out.println("Enter S: ");
-                            String newSVilla = scanner.nextLine();
-                            System.out.println("Enter Rental Costs: ");
-                            String newCostsVilla = scanner.nextLine();
-                            System.out.println("Enter Amount Of People: ");
-                            int newPeopleVilla = Integer.parseInt(scanner.nextLine());
+                            String newNameVilla;
+                            do {
+                                System.out.println("Enter Name: ");
+                                 newNameVilla = scanner.nextLine();
+                            }while (!RegexCode.checkVilla(newNameVilla));
+                            String newSVilla;
+                            do {
+                                System.out.println("Enter S: ");
+                                 newSVilla = scanner.nextLine();
+                            }while (!RegexCode.checkArea(newSVilla));
+                            String newCostsVilla;
+                            do {
+                                System.out.println("Enter Rental Costs: ");
+                                 newCostsVilla = scanner.nextLine();
+                            }while (!RegexCode.checkRentalCosts(newCostsVilla));
+                            String newPeopleVilla;
+                            do {
+                                System.out.println("Enter Amount Of People: ");
+                                 newPeopleVilla = scanner.nextLine();
+                            }while (!RegexCode.checkPeople(newPeopleVilla));
                             System.out.println("Enter Rental Type: ");
                             String newRentalVilla = scanner.nextLine();
                             System.out.println("Enter room Standard: ");
                             String newStandardVilla = scanner.nextLine();
-                            System.out.println("Enter  S Pool: ");
-                            Double newSPoolVilla = Double.parseDouble(scanner.nextLine());
-                            System.out.println("Enter  Number Floors: ");
-                            int newFloorsVilla = Integer.parseInt(scanner.nextLine());
+                            String newSPoolVilla;
+                            do {
+                                System.out.println("Enter S Pool: ");
+                                 newSPoolVilla = scanner.nextLine();
+                            }while (!RegexCode.checkArea(newSPoolVilla));
+                            String newFloorsVilla;
+                            do {
+                                System.out.println("Enter Number Floors: ");
+                                 newFloorsVilla = scanner.nextLine();
+                            }while (!RegexCode.checkFloors(newFloorsVilla));
+
                             Villa villa = new Villa(newNameVilla, newSVilla, newCostsVilla, newPeopleVilla, newRentalVilla,
                                     newStandardVilla, newSPoolVilla, newFloorsVilla);
                             iFacilityService.addVilla(villa, 5);
                             break;
                         case 2:
-                            System.out.println("Enter Name: ");
-                            String newNameRoom = scanner.nextLine();
-                            System.out.println("Enter S: ");
-                            String newSRoom = scanner.nextLine();
-                            System.out.println("Enter Rental Costs: ");
-                            String newCostsRoom = scanner.nextLine();
-                            System.out.println("Enter Amount Of People: ");
-                            int newPeopleRoom = Integer.parseInt(scanner.nextLine());
+                            String newNameRoom;
+                            do {
+                                System.out.println("Enter Name Room: ");
+                                 newNameRoom = scanner.nextLine();
+                            }while (!RegexCode.checkRoom(newNameRoom));
+                            String newSRoom;
+                            do {
+                                System.out.println("Enter S Room: ");
+                                 newSRoom = scanner.nextLine();
+                            }while (!RegexCode.checkArea(newSRoom));
+
+                            String newCostsRoom;
+                            do {
+                                System.out.println("Enter Rental Costs Room: ");
+                                 newCostsRoom = scanner.nextLine();
+                            }while (!RegexCode.checkArea(newCostsRoom));
+                            String newPeopleRoom;
+                            do {
+                                System.out.println("Enter Amount Of People: ");
+                                 newPeopleRoom = scanner.nextLine();
+                            }while (!RegexCode.checkPeople(newPeopleRoom));
                             System.out.println("Enter Rental Type: ");
                             String newRentalRoom = scanner.nextLine();
                             System.out.println("Enter the Room's Free Service: ");
@@ -88,7 +121,7 @@ public class FacilityManagementController {
                             facilityManagement();
                             break;
                         default:
-                            System.out.println("wrong choice please choose again");
+                            System.out.println("Wrong choice please choose again !");
                     }
                 case 3:
                     iFacilityService.displayFacilityMaintenance();

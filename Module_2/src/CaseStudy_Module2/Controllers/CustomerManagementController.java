@@ -4,6 +4,7 @@ import CaseStudy_Module2.Models.Person.Customer;
 import CaseStudy_Module2.Models.Person.Employee;
 import CaseStudy_Module2.Services.IService.ICustomerService;
 import CaseStudy_Module2.Services.service.CustomerServiceImpl;
+import CaseStudy_Module2.Utils.RegexCode;
 
 import java.util.Scanner;
 
@@ -25,26 +26,68 @@ public class CustomerManagementController {
                     iCustomerService.display();
                     break;
                 case 2:
-                    System.out.println("Enter the ID Customer: ");
-                    String newId = sc.nextLine();
-                    System.out.println("Enter the Name Customer: ");
-                    String newName = sc.nextLine();
-                    System.out.println("Enter the Birthday Customer:");
-                    String newBirthday = sc.nextLine();
+                    String newId;
+                    do {
+                        System.out.println("Enter ID Customer: ");
+                        newId = sc.nextLine();
+                    } while (!RegexCode.checkCustomerId(newId));
+                    String newName;
+                    do {
+                        System.out.println("Enter Name Customer: ");
+                        newName = sc.nextLine();
+                    } while (!RegexCode.checkName(newName));
+                    String newBirthday;
+                    do {
+                        System.out.println("Enter Birthday Customer:");
+                        newBirthday = sc.nextLine();
+                    } while (!RegexCode.checkBirthday(newBirthday));
+
                     System.out.println("Enter the Sex Customer: ");
                     String newSex = sc.nextLine();
-                    System.out.println("Enter the CMND Customer: ");
-                    String newCMND = sc.nextLine();
-                    System.out.println("Enter the Phone Customer: ");
+                    String newCMND;
+                    do {
+                        System.out.println("Enter CMND Customer: ");
+                        newCMND = sc.nextLine();
+                    } while (!RegexCode.checkCMND(newCMND));
+
+                    System.out.println("Enter Phone Customer: ");
                     String newPhone = sc.nextLine();
-                    System.out.println("Enter the Email Customer: ");
-                    String newEmail = sc.nextLine();
-                    System.out.println("Enter the Type Customer: ");
-                    String newType = sc.nextLine();
+                    String newEmail;
+                    do {
+                        System.out.println("Enter the Email Customer: ");
+                        newEmail = sc.nextLine();
+                    } while (!RegexCode.checkMail(newEmail));
+
+                    System.out.println("Enter the Type Customer: \n" +
+                            "1.\t Diamond \n" +
+                            "2.\t Platinium \n" +
+                            "3.\t Gold \n" +
+                            "4.\t Silver\n" +
+                            "5.\t Member");
+                    int choiceTpye = Integer.parseInt(sc.nextLine());
+                    String newType = "";
+                    switch (choiceTpye) {
+                        case 1:
+                            newType = "Diamond";
+                            break;
+                        case 2:
+                            newType = "Platinium";
+                            break;
+                        case 3:
+                            newType = "Gold";
+                            break;
+                        case 4:
+                            newType = "Silver";
+                            break;
+                        case 5:
+                            newType = "Member";
+                        default:
+                            System.out.println("Wrong choice, please choose again !");
+                    }
                     System.out.println("Enter the Address Customer: ");
                     String newAddress = sc.nextLine();
-                    Customer customer = new Customer(newId, newName, newCMND, newSex, newBirthday, newPhone, newEmail,
-                            newType, newAddress);
+                    Customer customer = new Customer(newId, newName, newCMND, newSex, newBirthday, newPhone,
+                            newEmail, newType, newAddress);
                     iCustomerService.add(customer);
                     break;
                 case 3:
@@ -52,21 +95,58 @@ public class CustomerManagementController {
                     String oldId = sc.nextLine();
                     Customer ctr = iCustomerService.findById(oldId);
                     if (ctr != null) {
-                        System.out.println("Enter the Name Customer: ");
-                        String newName1 = sc.nextLine();
-                        System.out.println("Enter the Birthday Customer:");
-                        String newBirthday1 = sc.nextLine();
-                        System.out.println("Enter the Sex Customer: ");
+                        String newName1;
+                        do {
+                            System.out.println("Enter Name Customer: ");
+                             newName1 = sc.nextLine();
+                        }while (!RegexCode.checkName(newName1));
+                        String newBirthday1;
+                        do {
+                            System.out.println("Enter Birthday Customer:");
+                             newBirthday1 = sc.nextLine();
+                        }while (!RegexCode.checkBirthday(newBirthday1));
+                        System.out.println("Enter Sex Customer: ");
                         String newSex1 = sc.nextLine();
-                        System.out.println("Enter the CMND Customer: ");
-                        String newCMND1 = sc.nextLine();
-                        System.out.println("Enter the Phone Customer: ");
+                        String newCMND1;
+                        do {
+                            System.out.println("Enter CMND Customer: ");
+                             newCMND1 = sc.nextLine();
+                        }while (!RegexCode.checkCMND(newCMND1));
+
+                        System.out.println("Enter Phone Customer: ");
                         String newPhone1 = sc.nextLine();
-                        System.out.println("Enter the Email Customer: ");
-                        String newEmail1 = sc.nextLine();
-                        System.out.println("Enter the Type Customer: ");
-                        String newType1 = sc.nextLine();
-                        System.out.println("Enter the Address Customer: ");
+                        String newEmail1;
+                        do {
+                            System.out.println("Enter Email Customer: ");
+                             newEmail1 = sc.nextLine();
+                        }while (!RegexCode.checkMail(newEmail1));
+                        System.out.println("Enter the Type Customer: \n" +
+                                "1.\t Diamond \n" +
+                                "2.\t Platinium \n" +
+                                "3.\t Gold \n" +
+                                "4.\t Silver\n" +
+                                "5.\t Member");
+                        int choiceTpyeEdit = Integer.parseInt(sc.nextLine());
+                        String newTypeEdit = "";
+                        switch (choiceTpyeEdit) {
+                            case 1:
+                                newTypeEdit = "Diamond";
+                                break;
+                            case 2:
+                                newTypeEdit = "Platinium";
+                                break;
+                            case 3:
+                                newTypeEdit = "Gold";
+                                break;
+                            case 4:
+                                newTypeEdit = "Silver";
+                                break;
+                            case 5:
+                                newTypeEdit = "Member";
+                            default:
+                                System.out.println("Wrong choice, please choose again !");
+                        }
+                        System.out.println("Enter Address Customer: ");
                         String newAddress1 = sc.nextLine();
                         ctr.setName(newName1);
                         ctr.setDateBirth(newBirthday1);
@@ -74,7 +154,7 @@ public class CustomerManagementController {
                         ctr.setcMND(newCMND1);
                         ctr.setNumberPhone(newPhone1);
                         ctr.setEmail(newEmail1);
-                        ctr.setCustomerType(newType1);
+                        ctr.setCustomerType(newTypeEdit);
                         ctr.setAddress(newAddress1);
                         iCustomerService.editCustomer(ctr);
                     } else {

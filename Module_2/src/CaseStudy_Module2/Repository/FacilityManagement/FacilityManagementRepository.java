@@ -5,7 +5,6 @@ import CaseStudy_Module2.Models.Facility.Villa;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
-import java.util.Objects;
 
 public class FacilityManagementRepository implements IFacilityManagementRepository {
 
@@ -14,20 +13,20 @@ public class FacilityManagementRepository implements IFacilityManagementReposito
 
 
     static {
-        roomIntegerMap.put(new Room("tổng thống", "40", "25tr/đêm", 10, "theo ngày",
+        roomIntegerMap.put(new Room("tổng thống", "40", "25tr/đêm", "10", "theo ngày",
                 "buffes free"), 1);
-        roomIntegerMap.put(new Room("vip", "30", "10tr/đêm", 6, "theo ngày",
+        roomIntegerMap.put(new Room("vip", "30", "10tr/đêm", "6", "theo ngày",
                 "Ăn sáng miễn phí"), 2);
-        roomIntegerMap.put(new Room("thường", "25", "7tr/đêm", 4, "theo tháng",
+        roomIntegerMap.put(new Room("thường", "25", "7tr/đêm", "4", "theo tháng",
                 "hồ bơi miễn phí"), 3);
 
 
-        villaIntegerMap.put(new Villa("villa gia đình", "100", "25tr/3 ngày", 20,
-                "theo ngày", "phòng 2 giường", 35.5, 5), 1);
-        villaIntegerMap.put(new Villa("villa nhóm", "50", "10tr/3 ngày", 10,
-                "theo ngày", "phòng 2 giường", 30, 4), 2);
-        villaIntegerMap.put(new Villa("villa tình yêu", "40", "6tr/3 ngày", 2,
-                "theo ngày", "phòng 2 giường", 30, 2), 3);
+        villaIntegerMap.put(new Villa("villa gia đình", "100", "25tr/3 ngày", "20",
+                "theo ngày", "phòng 2 giường", "35.5", "5"), 1);
+        villaIntegerMap.put(new Villa("villa nhóm", "50", "10tr/3 ngày", "10",
+                "theo ngày", "phòng 2 giường", "30", "4"), 2);
+        villaIntegerMap.put(new Villa("villa tình yêu", "40", "6tr/3 ngày", "2",
+                "theo ngày", "phòng 2 giường", "30", "2"), 3);
     }
 
     @Override

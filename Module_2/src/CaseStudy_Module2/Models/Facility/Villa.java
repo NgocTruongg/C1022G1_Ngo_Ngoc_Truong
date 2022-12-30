@@ -4,11 +4,11 @@ import CaseStudy_Module2.Models.Facility.Facility;
 
 public class Villa extends Facility {
     private String roomStandard; // Tiêu chuẩn phòng
-    private double sPool; // diện tích hồ bơi
-    private int numberFloors; // số tầng
+    private String sPool; // diện tích hồ bơi
+    private String numberFloors; // số tầng
 
-    public Villa(String name, String s, String rentalCosts, int amountOfPeople, String rentalType,
-                 String roomStandard, double sPool, int numberFloors) {
+    public Villa(String name, String s, String rentalCosts, String amountOfPeople, String rentalType,
+                 String roomStandard, String sPool, String numberFloors) {
         super(name, s, rentalCosts, amountOfPeople, rentalType);
         this.roomStandard = roomStandard;
         this.sPool = sPool;
@@ -23,19 +23,19 @@ public class Villa extends Facility {
         this.roomStandard = roomStandard;
     }
 
-    public double getsPool() {
+    public String getsPool() {
         return sPool;
     }
 
-    public void setsPool(double sPool) {
+    public void setsPool(String sPool) {
         this.sPool = sPool;
     }
 
-    public int getNumberFloors() {
+    public String getNumberFloors() {
         return numberFloors;
     }
 
-    public void setNumberFloors(int numberFloors) {
+    public void setNumberFloors(String numberFloors) {
         this.numberFloors = numberFloors;
     }
 

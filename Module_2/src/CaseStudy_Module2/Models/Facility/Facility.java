@@ -4,13 +4,13 @@ public abstract class Facility {
     protected String name;
     protected String s; //diện tích sử dụng
     protected String rentalCosts; //chi phí thuê
-    protected int amountOfPeople; // sô lượng người
+    protected String amountOfPeople; // sô lượng người
     protected String rentalType; // Loại cho thuê
 
     public Facility() {
     }
 
-    public Facility(String name, String s, String rentalCosts, int amountOfPeople, String rentalType) {
+    public Facility(String name, String s, String rentalCosts, String amountOfPeople, String rentalType) {
         this.name = name;
         this.s = s;
         this.rentalCosts = rentalCosts;
@@ -42,11 +42,11 @@ public abstract class Facility {
         this.rentalCosts = rentalCosts;
     }
 
-    public int getAmountOfPeople() {
+    public String getAmountOfPeople() {
         return amountOfPeople;
     }
 
-    public void setAmountOfPeople(int amountOfPeople) {
+    public void setAmountOfPeople(String amountOfPeople) {
         this.amountOfPeople = amountOfPeople;
     }
 
@@ -68,4 +68,5 @@ public abstract class Facility {
                 ", rentalType='" + rentalType + '\'' +
                 '}';
     }
+
 }

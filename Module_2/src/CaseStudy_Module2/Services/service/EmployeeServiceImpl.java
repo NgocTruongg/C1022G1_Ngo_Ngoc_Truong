@@ -20,8 +20,8 @@ public class EmployeeServiceImpl implements IEmployeeService {
     }
 
     @Override
-    public void deleteId(String employee) {
-         iEmployeeRepository.deleteId(employee);
+    public void deleteId(String id) {
+        iEmployeeRepository.deleteId(id);
     }
 
     @Override
