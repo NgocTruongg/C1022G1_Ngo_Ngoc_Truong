@@ -8,7 +8,8 @@ public class Employee extends Person {
     public Employee() {
     }
 
-    public Employee(String id, String name, String dateBirth, String sex, String cMND, String numberPhone, String email, String level, String position, String salary) {
+    public Employee(String id, String name, String dateBirth, String sex, String cMND, String numberPhone, String email,
+                    String level, String position, String salary) {
         super(id, name, dateBirth, sex, cMND, numberPhone, email);
         this.level = level;
         this.position = position;
@@ -37,6 +38,10 @@ public class Employee extends Person {
 
     public void setSalary(String salary) {
         this.salary = salary;
+    }
+    public String convertLine() {
+        String COMMA = ",";
+        return this.level + COMMA + super.convertLine() + COMMA +this.position + COMMA + this.salary;
     }
 
     @Override

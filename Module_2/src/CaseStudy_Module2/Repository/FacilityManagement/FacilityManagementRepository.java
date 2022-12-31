@@ -1,5 +1,7 @@
 package CaseStudy_Module2.Repository.FacilityManagement;
 
+import CaseStudy_Module2.Data.ReadFile.ReadFile;
+import CaseStudy_Module2.Data.WriteFile.WriteFile;
 import CaseStudy_Module2.Models.Facility.Room;
 import CaseStudy_Module2.Models.Facility.Villa;
 
@@ -10,7 +12,8 @@ public class FacilityManagementRepository implements IFacilityManagementReposito
 
     static Map<Room, Integer> roomIntegerMap = new LinkedHashMap<>();
     static Map<Villa, Integer> villaIntegerMap = new LinkedHashMap<>();
-
+    public static final String PATH_ROOM = "src\\CaseStudy_Module2\\Data\\room.csv";
+    public static final String PATH_VILLA = "src\\CaseStudy_Module2\\Data\\villa.csv";
 
     static {
         roomIntegerMap.put(new Room("tổng thống", "40", "25tr/đêm", "10", "theo ngày",
@@ -29,6 +32,14 @@ public class FacilityManagementRepository implements IFacilityManagementReposito
                 "theo ngày", "phòng 2 giường", "30", "2"), 3);
     }
 
+    public void writeFileRoom(Map<Room, Integer> roomIntegerMap) {
+        WriteFile.writeFileRoom(PATH_ROOM, roomIntegerMap);
+    }
+
+    public void writeFileVilla(Map<Villa, Integer> villaIntegerMap) {
+        WriteFile.writeFileVilla(PATH_VILLA, villaIntegerMap);
+    }
+
     @Override
     public void displayRoom() {
         for (Map.Entry<Room, Integer> room : roomIntegerMap.entrySet()) {
@@ -45,7 +56,7 @@ public class FacilityManagementRepository implements IFacilityManagementReposito
 
     @Override
     public void addVilla(Villa villa, int num) {
-        villaIntegerMap.put(villa,num);
+        villaIntegerMap.put(villa, num);
     }
 
     @Override
@@ -55,7 +66,7 @@ public class FacilityManagementRepository implements IFacilityManagementReposito
 
     @Override
     public void displayFacilityMaintenance() {
-        for (Map.Entry<Room,Integer> roomEntry: roomIntegerMap.entrySet()) {
+        for (Map.Entry<Room, Integer> roomEntry : roomIntegerMap.entrySet()) {
             if (roomEntry.getValue() > 4) {
                 System.out.println(roomEntry.getKey());
                 System.out.println("Number of times used is: " + roomEntry.getValue());

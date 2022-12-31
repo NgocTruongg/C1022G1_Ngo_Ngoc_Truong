@@ -30,6 +30,11 @@ public class Customer extends Person {
     public void setAddress(String address) {
         this.address = address;
     }
+    public String convertLine() {
+        String COMMA = ",";
+        return this.customerType + COMMA + super.convertLine() + COMMA +this.address;
+    }
+
 
     @Override
     public String toString() {

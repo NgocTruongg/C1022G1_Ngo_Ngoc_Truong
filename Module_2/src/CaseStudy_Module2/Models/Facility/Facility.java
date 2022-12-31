@@ -58,6 +58,11 @@ public abstract class Facility {
         this.rentalType = rentalType;
     }
 
+    public String convertLine() {
+        String COMMA = ",";
+        return this.name + COMMA + this.s + COMMA + this.rentalCosts + COMMA + this.amountOfPeople +COMMA +this.rentalCosts;
+    }
+
     @Override
     public String toString() {
         return "Facility{" +

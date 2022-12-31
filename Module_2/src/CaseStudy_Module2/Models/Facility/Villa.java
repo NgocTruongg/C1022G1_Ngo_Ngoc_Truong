@@ -38,6 +38,10 @@ public class Villa extends Facility {
     public void setNumberFloors(String numberFloors) {
         this.numberFloors = numberFloors;
     }
+    public String covertLine() {
+        String COMMA = ",";
+        return super.convertLine() + COMMA + this.roomStandard + COMMA + this.sPool + COMMA + this.numberFloors;
+    }
 
     @Override
     public String toString() {

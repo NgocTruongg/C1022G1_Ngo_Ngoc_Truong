@@ -18,6 +18,10 @@ public class Room extends Facility {
     public void setFreeService(String freeService) {
         this.freeService = freeService;
     }
+    public String convertLine(){
+        String COMMA = ",";
+        return this.freeService + COMMA + super.convertLine();
+    }
 
     @Override
     public String toString() {

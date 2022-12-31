@@ -28,18 +28,18 @@
 //        try {
 //            while ((line = bufferedReader.readLine()) != null) {
 //                temp = line.split(",");
-//                String fullName =temp[0];
-//                String dateOfBirthday = temp[1];
-//                String sex =temp[2];
-////                String dateOfBirthday = temp[1];
-////                String fullName =temp[0];
-////                String dateOfBirthday = temp[1];
-////                String fullName =temp[0];
-////                String dateOfBirthday = temp[1];
-////                String fullName =temp[0];
-////                String dateOfBirthday = temp[1];
-////                String fullName =temp[0];
-////                String dateOfBirthday = temp[1];
+//
+//                String id =temp[0];
+//                String fullName = temp[1];
+//                String dayOfBirthDay =temp[2];
+//                String sex = temp[3];
+//                String cMND =temp[4];
+//                String numberPhone = temp[5];
+//                String email =temp[6];
+//                String level = temp[7];
+//                String position =temp[8];
+//                String salary = temp[9];
+//
 //            }
 //        } catch (IOException e) {
 //            e.printStackTrace();

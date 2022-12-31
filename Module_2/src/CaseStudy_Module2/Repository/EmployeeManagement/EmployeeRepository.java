@@ -1,5 +1,7 @@
 package CaseStudy_Module2.Repository.EmployeeManagement;
 
+import CaseStudy_Module2.Data.ReadFile.ReadFile;
+import CaseStudy_Module2.Data.WriteFile.WriteFile;
 import CaseStudy_Module2.Models.Person.Employee;
 
 import java.util.ArrayList;
@@ -7,6 +9,7 @@ import java.util.List;
 
 public class EmployeeRepository implements IEmployeeRepository {
     public static List<Employee> employeeList = new ArrayList<>();
+    public static final String PATH_EMPLOYEE = "src\\CaseStudy_Module2\\Data\\employee.csv";
 
     static {
         employeeList.add(new Employee("NV-1", "Đạt", "26/9/1999",
@@ -21,6 +24,10 @@ public class EmployeeRepository implements IEmployeeRepository {
     }
 
 
+    public void writeFile(List<Employee> employeeList) {
+        WriteFile.writeFileEmployee(PATH_EMPLOYEE, employeeList);
+    }
+
     @Override
     public void display() {
         for (Employee c : employeeList) {
@@ -30,13 +37,15 @@ public class EmployeeRepository implements IEmployeeRepository {
 
     @Override
     public void add(Employee employee) {
+        List<Employee> list = ReadFile.readFileEmployee(PATH_EMPLOYEE);
         employeeList.add(employee);
+        writeFile(list);
 
     }
 
     @Override
     public void deleteId(String id) {
-
+        List<Employee> list = ReadFile.readFileEmployee(PATH_EMPLOYEE);
         int index = -1;
         for (int i = 0; i < employeeList.size(); i++) {
             if (employeeList.get(i).getId().equals(id)) {
@@ -45,6 +54,7 @@ public class EmployeeRepository implements IEmployeeRepository {
             }
         }
         employeeList.remove(index);
+        writeFile(list);
     }
 
 
@@ -60,9 +70,11 @@ public class EmployeeRepository implements IEmployeeRepository {
 
     @Override
     public void edit(Employee employee) {
+        List<Employee> list = ReadFile.readFileEmployee(PATH_EMPLOYEE);
         for (int i = 0; i < employeeList.size(); i++) {
             if (employeeList.get(i).getId().equals(employee.getId())) {
                 employeeList.set(i, employee);
+                writeFile(list);
             }
         }
     }

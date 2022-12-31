@@ -1,5 +1,7 @@
 package CaseStudy_Module2.Models.Person;
 
+import java.util.Collections;
+
 public abstract class Person {
     private String id;
     private String name;
@@ -89,5 +91,11 @@ public abstract class Person {
                 ", numberPhone='" + numberPhone + '\'' +
                 ", email='" + email + '\'' +
                 '}';
+    }
+
+    protected  String convertLine(){
+        String COMMA = ",";
+        return this.id + COMMA + this.name + COMMA + this.dateBirth + COMMA +this.sex + COMMA +
+                this.cMND + COMMA + this.numberPhone +COMMA + this.email;
     }
 }
