@@ -84,7 +84,7 @@ public class ReadFile {
                 while ((line = bufferedReader.readLine()) != null){
                     String[] lineRoom = line.split(",");
                     Room room = new Room(lineRoom[0],lineRoom[1],lineRoom[2],
-                            lineRoom[3],lineRoom[4],lineRoom[5]);
+                            lineRoom[3],lineRoom[4],lineRoom[5],lineRoom[6]);
                     roomIntegerMap.put(room,0);
                 }
 
@@ -113,8 +113,8 @@ public class ReadFile {
                 String line;
                 while ((line = bufferedReader.readLine()) != null){
                     String[] lineVilla = line.split(",");
-                    Villa villa = new Villa(lineVilla[0],lineVilla[1],lineVilla[2],
-                            lineVilla[3],lineVilla[4],lineVilla[5],lineVilla[6],lineVilla[7]);
+                    Villa villa = new Villa(lineVilla[0],lineVilla[1],lineVilla[2], lineVilla[3],
+                            lineVilla[4],lineVilla[5],lineVilla[6],lineVilla[7],lineVilla[8]);
                     villaIntegerMap.put(villa,0);
                 }
 

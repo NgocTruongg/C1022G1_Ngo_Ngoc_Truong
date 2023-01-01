@@ -41,7 +41,7 @@ public class Employee extends Person {
     }
     public String convertLine() {
         String COMMA = ",";
-        return this.level + COMMA + super.convertLine() + COMMA +this.position + COMMA + this.salary;
+        return  super.convertLine() + COMMA + this.level+ COMMA + this.position + COMMA + this.salary;
     }
 
     @Override

@@ -30,6 +30,7 @@ public class EmployeeRepository implements IEmployeeRepository {
 
     @Override
     public void display() {
+        employeeList = ReadFile.readFileEmployee(PATH_EMPLOYEE);
         for (Employee c : employeeList) {
             System.out.println(c);
         }
@@ -37,15 +38,15 @@ public class EmployeeRepository implements IEmployeeRepository {
 
     @Override
     public void add(Employee employee) {
-        List<Employee> list = ReadFile.readFileEmployee(PATH_EMPLOYEE);
+        employeeList = ReadFile.readFileEmployee(PATH_EMPLOYEE);
         employeeList.add(employee);
-        writeFile(list);
+        writeFile(employeeList);
 
     }
 
     @Override
     public void deleteId(String id) {
-        List<Employee> list = ReadFile.readFileEmployee(PATH_EMPLOYEE);
+        employeeList = ReadFile.readFileEmployee(PATH_EMPLOYEE);
         int index = -1;
         for (int i = 0; i < employeeList.size(); i++) {
             if (employeeList.get(i).getId().equals(id)) {
@@ -54,12 +55,14 @@ public class EmployeeRepository implements IEmployeeRepository {
             }
         }
         employeeList.remove(index);
-        writeFile(list);
+        writeFile(employeeList);
+        /// ???
     }
 
 
     @Override
     public Employee finById(String id) {
+        employeeList = ReadFile.readFileEmployee(PATH_EMPLOYEE);
         for (Employee c : employeeList) {
             if (c.getId().equals(id)) {
                 return c;
@@ -70,12 +73,12 @@ public class EmployeeRepository implements IEmployeeRepository {
 
     @Override
     public void edit(Employee employee) {
-        List<Employee> list = ReadFile.readFileEmployee(PATH_EMPLOYEE);
+        employeeList = ReadFile.readFileEmployee(PATH_EMPLOYEE);
         for (int i = 0; i < employeeList.size(); i++) {
             if (employeeList.get(i).getId().equals(employee.getId())) {
                 employeeList.set(i, employee);
-                writeFile(list);
             }
         }
+        writeFile(employeeList);
     }
 }

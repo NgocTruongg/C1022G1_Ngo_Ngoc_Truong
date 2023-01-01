@@ -1,21 +1,32 @@
 package CaseStudy_Module2.Models.Facility;
 
 public abstract class Facility {
-    protected String name;
-    protected String s; //diện tích sử dụng
-    protected String rentalCosts; //chi phí thuê
-    protected String amountOfPeople; // sô lượng người
-    protected String rentalType; // Loại cho thuê
+    private String idService;
+    private String name;
+    private String s; //diện tích sử dụng
+    private String rentalCosts; //chi phí thuê
+    private String amountOfPeople; // sô lượng người
+    private String rentalType; // Loại cho thuê
 
     public Facility() {
     }
 
-    public Facility(String name, String s, String rentalCosts, String amountOfPeople, String rentalType) {
+    public Facility(String idService, String name, String s, String rentalCosts, String amountOfPeople,
+                    String rentalType) {
+        this.idService = idService;
         this.name = name;
         this.s = s;
         this.rentalCosts = rentalCosts;
         this.amountOfPeople = amountOfPeople;
         this.rentalType = rentalType;
+    }
+
+    public String getIdService() {
+        return idService;
+    }
+
+    public void setIdService(String idService) {
+        this.idService = idService;
     }
 
     public String getName() {
@@ -60,18 +71,18 @@ public abstract class Facility {
 
     public String convertLine() {
         String COMMA = ",";
-        return this.name + COMMA + this.s + COMMA + this.rentalCosts + COMMA + this.amountOfPeople +COMMA +this.rentalCosts;
+        return this.idService + COMMA + this.name + COMMA + this.s + COMMA + this.rentalCosts + COMMA + this.amountOfPeople + COMMA + this.rentalCosts;
     }
 
     @Override
     public String toString() {
         return "Facility{" +
-                "name='" + name + '\'' +
+                "idService='" + idService + '\'' +
+                ", name='" + name + '\'' +
                 ", s='" + s + '\'' +
                 ", rentalCosts='" + rentalCosts + '\'' +
-                ", amountOfPeople=" + amountOfPeople +
+                ", amountOfPeople='" + amountOfPeople + '\'' +
                 ", rentalType='" + rentalType + '\'' +
                 '}';
     }
-
 }

@@ -26,7 +26,7 @@ public class CustomerRepository implements ICustomerRepository {
     }
     @Override
     public void display() {
-        List<Customer> list = ReadFile.readFileCustomer(PATH_CUSTOMER);
+        customerList = ReadFile.readFileCustomer(PATH_CUSTOMER);
         for (Customer c : customerList) {
             System.out.println(c);
         }
@@ -34,32 +34,36 @@ public class CustomerRepository implements ICustomerRepository {
 
     @Override
     public void add(Customer customer) {
-        List<Customer> list = ReadFile.readFileCustomer(PATH_CUSTOMER);
+        customerList = ReadFile.readFileCustomer(PATH_CUSTOMER);
         customerList.add(customer);
-        writeFile(list);
+        writeFile(customerList);
 
     }
 
     @Override
     public Customer findById(String id) {
-        List<Customer> list = ReadFile.readFileCustomer(PATH_CUSTOMER);
-        for (Customer c : customerList) {
-            if (c.getId().equals(id)) {
-                writeFile(list);
-                return c;
-            }
+        customerList = ReadFile.readFileCustomer(PATH_CUSTOMER);
+        for (int i = 0; i < customerList.size(); i++) {
+            if(customerList.get(i).getId().equals(id)) {
+                return customerList.get(i);
+        }
+//        for (Customer c : customerList) {
+//            if (c.getId().equals(id)) {
+//                writeFile(list);
+//                return c;
+//            }
         }
         return null;
     }
 
     @Override
     public void editCustomer(Customer customer) {
-        List<Customer> list = ReadFile.readFileCustomer(PATH_CUSTOMER);
+        customerList = ReadFile.readFileCustomer(PATH_CUSTOMER);
         for (int i = 0; i < customerList.size() ; i++) {
             if (customer.getId().equals(customerList.get(i).getId())) {
                 customerList.set(i, customer);
-                writeFile(list);
             }
         }
+        writeFile(customerList);
     }
 }

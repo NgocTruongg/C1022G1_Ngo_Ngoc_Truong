@@ -1,8 +1,8 @@
 package CaseStudy_Module2.Models.Person;
 
 public class Customer extends Person {
-        private String customerType;
-        private String address;
+    private String customerType;
+    private String address;
 
     public Customer() {
 
@@ -30,9 +30,10 @@ public class Customer extends Person {
     public void setAddress(String address) {
         this.address = address;
     }
+
     public String convertLine() {
         String COMMA = ",";
-        return this.customerType + COMMA + super.convertLine() + COMMA +this.address;
+        return super.convertLine() + COMMA + this.customerType + COMMA + this.address;
     }
 
 

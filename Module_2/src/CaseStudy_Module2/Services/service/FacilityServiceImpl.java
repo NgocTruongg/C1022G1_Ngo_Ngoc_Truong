@@ -9,15 +9,7 @@ import CaseStudy_Module2.Services.IService.IFacilityService;
 public class FacilityServiceImpl implements IFacilityService {
 
   IFacilityManagementRepository iFacilityManagementRepository = new FacilityManagementRepository();
-    @Override
-    public void displayRoom() {
-        iFacilityManagementRepository.displayRoom();
-    }
 
-    @Override
-    public void displayVilla() {
-        iFacilityManagementRepository.displayVilla();
-    }
 
   @Override
   public void addVilla(Villa villa, int num) {
@@ -32,6 +24,12 @@ public class FacilityServiceImpl implements IFacilityService {
   @Override
   public void displayFacilityMaintenance() {
     iFacilityManagementRepository.displayFacilityMaintenance();
+  }
+
+  @Override
+  public void displayFacility() {
+    iFacilityManagementRepository.displayFacility();
+
   }
 
 }
