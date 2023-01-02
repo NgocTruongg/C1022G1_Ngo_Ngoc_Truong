@@ -41,7 +41,6 @@ public class CustomerManagementController {
                         System.out.println("Enter Birthday Customer:");
                         newBirthday = sc.nextLine();
                     } while (!RegexCode.checkBirthday(newBirthday));
-
                     System.out.println("Enter the Sex Customer: ");
                     String newSex = sc.nextLine();
                     String newCMND;
@@ -86,7 +85,7 @@ public class CustomerManagementController {
                     }
                     System.out.println("Enter the Address Customer: ");
                     String newAddress = sc.nextLine();
-                    Customer customer = new Customer(newId, newName, newCMND, newSex, newBirthday, newPhone,
+                    Customer customer = new Customer(newId, newName, newBirthday, newSex, newCMND, newPhone,
                             newEmail, newType, newAddress);
                     iCustomerService.add(customer);
                     break;
@@ -98,28 +97,28 @@ public class CustomerManagementController {
                         String newName1;
                         do {
                             System.out.println("Enter Name Customer: ");
-                             newName1 = sc.nextLine();
-                        }while (!RegexCode.checkName(newName1));
+                            newName1 = sc.nextLine();
+                        } while (!RegexCode.checkName(newName1));
                         String newBirthday1;
                         do {
                             System.out.println("Enter Birthday Customer:");
-                             newBirthday1 = sc.nextLine();
-                        }while (!RegexCode.checkBirthday(newBirthday1));
+                            newBirthday1 = sc.nextLine();
+                        } while (!RegexCode.checkBirthday(newBirthday1));
                         System.out.println("Enter Sex Customer: ");
                         String newSex1 = sc.nextLine();
                         String newCMND1;
                         do {
                             System.out.println("Enter CMND Customer: ");
-                             newCMND1 = sc.nextLine();
-                        }while (!RegexCode.checkCMND(newCMND1));
+                            newCMND1 = sc.nextLine();
+                        } while (!RegexCode.checkCMND(newCMND1));
 
                         System.out.println("Enter Phone Customer: ");
                         String newPhone1 = sc.nextLine();
                         String newEmail1;
                         do {
                             System.out.println("Enter Email Customer: ");
-                             newEmail1 = sc.nextLine();
-                        }while (!RegexCode.checkMail(newEmail1));
+                            newEmail1 = sc.nextLine();
+                        } while (!RegexCode.checkMail(newEmail1));
                         System.out.println("Enter the Type Customer: \n" +
                                 "1.\t Diamond \n" +
                                 "2.\t Platinium \n" +

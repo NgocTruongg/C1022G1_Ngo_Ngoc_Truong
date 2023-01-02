@@ -10,9 +10,9 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 
 public class FacilityManagementRepository implements IFacilityManagementRepository {
-    private static Map<Facility,Integer> facilityIntegerMap = new LinkedHashMap<>();
-//    static Map<Room, Integer> roomIntegerMap = new LinkedHashMap<>();
-//    static Map<Villa, Integer> villaIntegerMap = new LinkedHashMap<>();
+    //    private static Map<Facility,Integer> facilityIntegerMap = new LinkedHashMap<>();
+    static Map<Room, Integer> roomIntegerMap = new LinkedHashMap<>();
+    static Map<Villa, Integer> villaIntegerMap = new LinkedHashMap<>();
     public static final String PATH_ROOM = "src\\CaseStudy_Module2\\Data\\FileCSV\\room.csv";
     public static final String PATH_VILLA = "src\\CaseStudy_Module2\\Data\\FileCSV\\villa.csv";
 
@@ -47,11 +47,11 @@ public class FacilityManagementRepository implements IFacilityManagementReposito
 
     @Override
     public void displayFacility() {
-        Map<Room,Integer> roomIntegerMap = ReadFile.readFileRoom(PATH_ROOM);
+        Map<Room, Integer> roomIntegerMap = ReadFile.readFileRoom(PATH_ROOM);
         for (Map.Entry<Room, Integer> room : roomIntegerMap.entrySet()) {
             System.out.println(room.getKey() + ":" + room.getValue() + " lần sử dụng");
         }
-        Map<Villa,Integer> villaIntegerMap = ReadFile.readFileVilla(PATH_VILLA);
+        Map<Villa, Integer> villaIntegerMap = ReadFile.readFileVilla(PATH_VILLA);
         for (Map.Entry<Villa, Integer> villa : villaIntegerMap.entrySet()) {
             System.out.println(villa.getKey() + ":" + villa.getValue() + " lần sử dụng");
         }
@@ -60,7 +60,7 @@ public class FacilityManagementRepository implements IFacilityManagementReposito
 
     @Override
     public void addVilla(Villa villa, int num) {
-        Map<Villa,Integer> villaIntegerMap = ReadFile.readFileVilla(PATH_VILLA);
+        Map<Villa, Integer> villaIntegerMap = ReadFile.readFileVilla(PATH_VILLA);
         villaIntegerMap.put(villa, num);
         writeFileVilla(villaIntegerMap);
 
@@ -68,25 +68,26 @@ public class FacilityManagementRepository implements IFacilityManagementReposito
 
     @Override
     public void addRoom(Room room, int num) {
-        Map<Room,Integer> roomIntegerMap = ReadFile.readFileRoom(PATH_ROOM);
+        Map<Room, Integer> roomIntegerMap = ReadFile.readFileRoom(PATH_ROOM);
         roomIntegerMap.put(room, num);
         writeFileRoom(roomIntegerMap);
     }
 
     @Override
     public void displayFacilityMaintenance() {
-        Map<Room,Integer> roomIntegerMap = ReadFile.readFileRoom(PATH_ROOM);
+        Map<Room, Integer> roomIntegerMap = ReadFile.readFileRoom(PATH_ROOM);
         for (Map.Entry<Room, Integer> roomEntry : roomIntegerMap.entrySet()) {
-            if (roomEntry.getValue() > 4) {
+            if (roomEntry.getValue() >= 4) {
                 System.out.println(roomEntry.getKey());
                 System.out.println("Number of times used is: " + roomEntry.getValue());
             }
         }
-        Map<Villa,Integer> villaIntegerMap = ReadFile.readFileVilla(PATH_VILLA);
+        Map<Villa, Integer> villaIntegerMap = ReadFile.readFileVilla(PATH_VILLA);
         for (Map.Entry<Villa, Integer> villaEntry : villaIntegerMap.entrySet()) {
-            if (villaEntry.getValue() > 4) {
+            if (villaEntry.getValue() >= 4) {
                 System.out.println(villaEntry.getKey());
                 System.out.println("Number of times used is: " + villaEntry.getValue());
+
             }
         }
     }

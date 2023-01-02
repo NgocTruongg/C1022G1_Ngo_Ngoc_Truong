@@ -29,7 +29,7 @@ public class Room extends Facility {
 
     public String convertLine() {
         String COMMA = ",";
-        return  COMMA + super.convertLine() + COMMA + this.freeService;
+        return super.convertLine() + COMMA + this.freeService;
     }
 
     @Override

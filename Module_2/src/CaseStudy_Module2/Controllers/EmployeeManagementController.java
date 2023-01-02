@@ -30,37 +30,37 @@ public class EmployeeManagementController {
                 case 2:
                     String newId;
                     do {
-                        System.out.println("Enter  ID employee: ");
+                        System.out.println("Enter ID employee: ");
                         newId = scanner.nextLine();
                     } while (!RegexCode.checkEmployeeId(newId));
                     String newName;
                     do {
-                        System.out.println("Enter  name employee: ");
+                        System.out.println("Enter Name employee: ");
                         newName = scanner.nextLine();
                     } while (!RegexCode.checkName(newName));
                     String newBirthday;
                     do {
-                        System.out.println("Enter  birthday:");
+                        System.out.println("Enter Birthday:");
                         newBirthday = scanner.nextLine();
                     } while (!RegexCode.checkBirthday(newBirthday));
-                    System.out.println("Enter  Sex employee: ");
+                    System.out.println("Enter Sex employee: ");
                     String newSex = scanner.nextLine();
                     String newCMND;
                     do {
-                        System.out.println("Enter  CMND employee: ");
+                        System.out.println("Enter CMND employee: ");
                          newCMND = scanner.nextLine();
                     } while (!RegexCode.checkCMND(newCMND));
 
-                    System.out.println("Enter  Phone employee: ");
+                    System.out.println("Enter Phone employee: ");
                     String newPhone = scanner.nextLine();
                     String newEmail;
                     do {
-                        System.out.println("Enter  Email employee: ");
+                        System.out.println("Enter Email employee: ");
                          newEmail = scanner.nextLine();
                     } while (!RegexCode.checkMail(newEmail));
 
 
-                    System.out.println("Enter  Level employee: ");
+                    System.out.println("Enter Level employee: ");
                     System.out.println("1.\t Trung cấp\n" +
                             "2.\t Cao đẳng\n" +
                             "3.\t Đại học \n" +
@@ -81,7 +81,7 @@ public class EmployeeManagementController {
                             newLevel = "Sau đại học";
                             break;
                     }
-                    System.out.println("Enter  Position employee: ");
+                    System.out.println("Enter Position employee: ");
                     System.out.println("1.\t Lễ tân\n" +
                             "2.\t Phục vụ\n" +
                             "3.\t Chuyên viên \n" +
@@ -131,7 +131,7 @@ public class EmployeeManagementController {
                 case 4:
                     String newOldId;
                     do {
-                        System.out.println("Enter  Id Employee:");
+                        System.out.println("Enter Id Employee:");
                          newOldId = scanner.nextLine();
                     }while (!RegexCode.checkEmployeeId(newOldId));
                     
@@ -139,9 +139,9 @@ public class EmployeeManagementController {
                     if (eml != null) {
                         String newName1;
                         do {
-                            System.out.println("Enter  Name Employee: ");
+                            System.out.println("Enter Name employee: ");
                             newName1 = scanner.nextLine();
-                        }while (!RegexCode.checkEmployeeId(newName1));
+                        } while (!RegexCode.checkName(newName1));
                         String newBirthday1;
                         do {
                             System.out.println("Enter Birthday Employee:");
@@ -186,7 +186,6 @@ public class EmployeeManagementController {
                                 System.out.println("Wrong choice, please choose again !");
                         }
                         System.out.println("Enter Position Employee: ");
-                        String newPosition1 = scanner.nextLine();
                         System.out.println("Enter  Position employee: ");
                         System.out.println("1.\t Lễ tân\n" +
                                 "2.\t Phục vụ\n" +

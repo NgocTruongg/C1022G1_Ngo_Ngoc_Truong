@@ -11,7 +11,7 @@ import java.util.List;
 public class CustomerRepository implements ICustomerRepository {
 
     public static List<Customer> customerList = new ArrayList<>();
-    public static final String PATH_CUSTOMER ="src\\CaseStudy_Module2\\Data\\customer.csv";
+    public static final String PATH_CUSTOMER ="src\\CaseStudy_Module2\\Data\\FileCSV\\customer.csv";
 
     static {
         customerList.add(new Customer("KH-1", "Dao", "10/11/2004", "Nam", "192983728",
@@ -46,12 +46,7 @@ public class CustomerRepository implements ICustomerRepository {
         for (int i = 0; i < customerList.size(); i++) {
             if(customerList.get(i).getId().equals(id)) {
                 return customerList.get(i);
-        }
-//        for (Customer c : customerList) {
-//            if (c.getId().equals(id)) {
-//                writeFile(list);
-//                return c;
-//            }
+            }
         }
         return null;
     }

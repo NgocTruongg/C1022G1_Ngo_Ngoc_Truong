@@ -5,7 +5,7 @@ import javax.swing.plaf.PanelUI;
 public class RegexCode {
     private static final String CUSTOMER_ID_REGEX = "KH-[\\d]{1,}$"; // ID khách hàng
     private static final String EMPLOYEE_ID_REGEX = "NV-[\\d]{1,}$"; // id nhân viên
-    private static final String ROOM_REGEX = "^SVRO-[0-9]{4}$"; // room
+    private static final String ROOM_REGEX = "^(SVRO)[-][0-9]{4}$"; // room
     private static final String VILLA_REGEX = "^SVVL-[0-9]{4}$"; // villa
     private static final String SERVICE_NAME_REGEX = "[a-zA-Z]*+(\\s[a-z]+)*$"; // tên dịch vụ
     private static final String AREA_REGEX = "^([12][0-9]{2,}|[3-9][0-9]+)(\\.\\d+)?m2$"; // diện tích

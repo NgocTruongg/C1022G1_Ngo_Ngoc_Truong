@@ -9,7 +9,7 @@ import java.util.List;
 
 public class EmployeeRepository implements IEmployeeRepository {
     public static List<Employee> employeeList = new ArrayList<>();
-    public static final String PATH_EMPLOYEE = "src\\CaseStudy_Module2\\Data\\employee.csv";
+    public static final String PATH_EMPLOYEE = "src\\CaseStudy_Module2\\Data\\FileCSV\\employee.csv";
 
     static {
         employeeList.add(new Employee("NV-1", "Đạt", "26/9/1999",
@@ -50,8 +50,8 @@ public class EmployeeRepository implements IEmployeeRepository {
         int index = -1;
         for (int i = 0; i < employeeList.size(); i++) {
             if (employeeList.get(i).getId().equals(id)) {
-               index = i;
-               break;
+                index = i;
+                break;
             }
         }
         employeeList.remove(index);

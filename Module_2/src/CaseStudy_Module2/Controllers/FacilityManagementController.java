@@ -36,44 +36,51 @@ public class FacilityManagementController {
                     int choiceAdd = Integer.parseInt(scanner.nextLine());
                     switch (choiceAdd) {
                         case 1:
-                            System.out.println("Enter ID Villa");
-                            String newIdVl = scanner.nextLine();
-//                            do {
-//                                System.out.println("Enter ID Villa");
-//                                newIdVl = scanner.nextLine();
-//                            } while (!RegexCode.checkVilla(newIdVl));
+                            String newIdVl;
+                            do {
+                                System.out.println("Enter ID Service Villa");
+                                newIdVl = scanner.nextLine();
+                            } while (!RegexCode.checkVilla(newIdVl));
+
                             String newNameVilla;
                             do {
                                 System.out.println("Enter Name: ");
                                 newNameVilla = scanner.nextLine();
                             } while (!RegexCode.checkName(newNameVilla));
+
                             String newSVilla;
                             do {
-                                System.out.println("Enter S: ");
+                                System.out.println("Enter Area Villa: ");
                                 newSVilla = scanner.nextLine();
                             } while (!RegexCode.checkArea(newSVilla));
+
                             String newCostsVilla;
                             do {
                                 System.out.println("Enter Rental Costs: ");
                                 newCostsVilla = scanner.nextLine();
                             } while (!RegexCode.checkRentalCosts(newCostsVilla));
+
                             String newPeopleVilla;
                             do {
                                 System.out.println("Enter Amount Of People: ");
                                 newPeopleVilla = scanner.nextLine();
                             } while (!RegexCode.checkPeople(newPeopleVilla));
-                            System.out.println("Enter Rental Type: ");
+
+                            System.out.println("Enter Rental Type: (loại cho thuê) ");
                             String newRentalVilla = scanner.nextLine();
-                            System.out.println("Enter room Standard: ");
+
+                            System.out.println("Enter room Standard: (tiêu chuẩn phòng) ");
                             String newStandardVilla = scanner.nextLine();
+
                             String newSPoolVilla;
                             do {
-                                System.out.println("Enter S Pool: ");
+                                System.out.println("Enter Area Pool: ");
                                 newSPoolVilla = scanner.nextLine();
                             } while (!RegexCode.checkArea(newSPoolVilla));
+
                             String newFloorsVilla;
                             do {
-                                System.out.println("Enter Number Floors: ");
+                                System.out.println("Enter Number Floors: ( số tầng ) ");
                                 newFloorsVilla = scanner.nextLine();
                             } while (!RegexCode.checkFloors(newFloorsVilla));
 
@@ -82,38 +89,42 @@ public class FacilityManagementController {
                             iFacilityService.addVilla(villa, 5);
                             break;
                         case 2:
-                            System.out.println("...");
-                            String newIdRo = scanner.nextLine();
-//                            String newIdRo;
-//                            do {
-//                                System.out.println("Enter ID Room");
-//                                newIdRo = scanner.nextLine();
-//                            } while (!RegexCode.checkRoom(newIdRo));
+                            String newIdRo;
+                            do {
+                                System.out.println("Enter ID Room");
+                                newIdRo = scanner.nextLine();
+                            } while (!RegexCode.checkRoom(newIdRo));
+
                             String newNameRoom;
                             do {
                                 System.out.println("Enter Name Room: ");
                                 newNameRoom = scanner.nextLine();
                             } while (!RegexCode.checkName(newNameRoom));
+
                             String newSRoom;
                             do {
-                                System.out.println("Enter S Room: ");
+                                System.out.println("Enter Area Room: ");
                                 newSRoom = scanner.nextLine();
                             } while (!RegexCode.checkArea(newSRoom));
 
                             String newCostsRoom;
                             do {
-                                System.out.println("Enter Rental Costs Room: ");
+                                System.out.println("Enter Rental Costs Room: (chi phí thuê) ");
                                 newCostsRoom = scanner.nextLine();
                             } while (!RegexCode.checkRentalCosts(newCostsRoom));
+
                             String newPeopleRoom;
                             do {
                                 System.out.println("Enter Amount Of People: ");
                                 newPeopleRoom = scanner.nextLine();
                             } while (!RegexCode.checkPeople(newPeopleRoom));
+
                             System.out.println("Enter Rental Type: ");
                             String newRentalRoom = scanner.nextLine();
+
                             System.out.println("Enter the Room's Free Service: ");
                             String newFreeService = scanner.nextLine();
+
                             Room room = new Room(newIdRo, newNameRoom, newSRoom, newCostsRoom, newPeopleRoom,
                                     newRentalRoom, newFreeService);
                             iFacilityService.addRoom(room, 5);
