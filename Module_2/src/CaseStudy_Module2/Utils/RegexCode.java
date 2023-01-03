@@ -6,7 +6,7 @@ public class RegexCode {
     private static final String CUSTOMER_ID_REGEX = "KH-[\\d]{1,}$"; // ID khách hàng
     private static final String EMPLOYEE_ID_REGEX = "NV-[\\d]{1,}$"; // id nhân viên
     private static final String ROOM_REGEX = "^(SVRO)[-][0-9]{4}$"; // room
-    private static final String VILLA_REGEX = "^SVVL-[0-9]{4}$"; // villa
+    private static final String VILLA_REGEX = "^(SVVL)[-][0-9]{4}$"; // villa
     private static final String SERVICE_NAME_REGEX = "[a-zA-Z]*+(\\s[a-z]+)*$"; // tên dịch vụ
     private static final String AREA_REGEX = "^([12][0-9]{2,}|[3-9][0-9]+)(\\.\\d+)?m2$"; // diện tích
     private static final String RENTAL_COSTS_REGEX = "^\\d*(\\.\\d+)?$"; // chi phí thuê
@@ -20,6 +20,16 @@ public class RegexCode {
 
     public static final String CMND_REGEX = "^([\\d]{9}|[\\d]{12})$";
     public static final String EMAIL_REGEX = "^[\\w.]+@[\\w&&[^_]]+([.][\\w&&[^_]]+){1,2}$";
+    public static final String SEX_REGEX = "^Male|Female|Other Genders$";
+    public static final String TYPE_REGEX = "^Diamond|Platinium|Gold|Silver|Member$";
+    public static final String PHONE_REGEX = "^\\(?(\\d{3})\\)?[- ]?(\\d{3})[- ]?(\\d{4})$";
+    public static final String LEVEL_REGEX = "^Trung cấp|Cao đẳng|Đại học|Sau đại học$";
+    public static final String POSITION_REGEX = "^Lễ tân|Phục vụ|Chuyên viên|Giám sát|Quản lý|Giám đốc$";
+
+
+
+
+
 
     public static boolean checkCustomerId(String string) {
         return string.matches(CUSTOMER_ID_REGEX);
@@ -65,4 +75,21 @@ public class RegexCode {
     public static boolean checkMail(String string) {
         return string.matches(EMAIL_REGEX);
     }
+    public static boolean checkSex(String string) {
+        return string.matches(SEX_REGEX);
+    }
+    public static boolean checkType(String string) {
+        return string.matches(TYPE_REGEX);
+    }
+    public static boolean checkPhone(String string) {
+        return string.matches(PHONE_REGEX);
+    }
+    public static boolean checkLevel(String string) {
+        return string.matches(LEVEL_REGEX);
+    }
+    public static boolean checkPosition(String string) {
+        return string.matches(POSITION_REGEX);
+    }
+
+
 }

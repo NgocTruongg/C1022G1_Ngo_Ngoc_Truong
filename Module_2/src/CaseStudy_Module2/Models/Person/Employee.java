@@ -52,4 +52,5 @@ public class Employee extends Person {
                 ", salary='" + salary + '\'' +
                 '}';
     }
+
 }

@@ -39,7 +39,7 @@ public class WriteFile {
         File file = new File(path);
         BufferedWriter bufferedWriter= null;
         try {
-            FileWriter fileWriter = new FileWriter(path);
+            FileWriter fileWriter = new FileWriter(file);
             bufferedWriter = new BufferedWriter(fileWriter);
             for (Customer customer: list) {
                 bufferedWriter.write(customer.convertLine());
@@ -62,7 +62,7 @@ public class WriteFile {
         File file = new File(path);
         BufferedWriter bufferedWriter = null;
         try {
-            FileWriter fileWriter = new FileWriter(path);
+            FileWriter fileWriter = new FileWriter(file);
             bufferedWriter = new BufferedWriter(fileWriter);
             for (Map.Entry<Room, Integer> roomIntegerEntry : roomIntegerMap.entrySet()) {
                 bufferedWriter.write(roomIntegerEntry.getKey().convertLine() + "," + roomIntegerEntry.getValue());
@@ -84,7 +84,7 @@ public class WriteFile {
         File file = new File(path);
         BufferedWriter bufferedWriter = null;
         try {
-            FileWriter fileWriter = new FileWriter(path);
+            FileWriter fileWriter = new FileWriter(file);
             bufferedWriter = new BufferedWriter(fileWriter);
             for (Map.Entry<Villa,Integer> villaIntegerEntry: villaIntegerMap.entrySet()) {
                 bufferedWriter.write(villaIntegerEntry.getKey().covertLine()+ "," + villaIntegerEntry.getValue());
