@@ -25,6 +25,8 @@ public class RegexCode {
     public static final String PHONE_REGEX = "^\\(?(\\d{3})\\)?[- ]?(\\d{3})[- ]?(\\d{4})$";
     public static final String LEVEL_REGEX = "^Trung cấp|Cao đẳng|Đại học|Sau đại học$";
     public static final String POSITION_REGEX = "^Lễ tân|Phục vụ|Chuyên viên|Giám sát|Quản lý|Giám đốc$";
+    public static final String RENTAL_REGEX = "^theo ngày|theo tháng|theo năm$";
+
 
 
 
@@ -89,6 +91,9 @@ public class RegexCode {
     }
     public static boolean checkPosition(String string) {
         return string.matches(POSITION_REGEX);
+    }
+    public static boolean checkRental(String string) {
+        return string.matches(RENTAL_REGEX);
     }
 
 
