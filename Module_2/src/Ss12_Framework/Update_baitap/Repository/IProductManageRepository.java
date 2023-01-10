@@ -18,5 +18,4 @@ public interface IProductManageRepository {
     void sortAscending();
 
     void sortDescending();
-
 }

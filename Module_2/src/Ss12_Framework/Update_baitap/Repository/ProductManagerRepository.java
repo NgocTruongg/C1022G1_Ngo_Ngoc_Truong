@@ -90,6 +90,4 @@ public class ProductManagerRepository implements IProductManageRepository {
         });
         this.display();
     }
-
-
 }

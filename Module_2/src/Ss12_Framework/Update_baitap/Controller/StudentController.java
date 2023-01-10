@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 public class StudentController {
     public static void main(String[] args) {
-        ProductManagerService productManagerService = new ProductManagerService();
+         IProductManagerService productManagerService = new ProductManagerService();
         Scanner scanner = new Scanner(System.in);
         do {
             System.out.println("-----------MENU-------------");

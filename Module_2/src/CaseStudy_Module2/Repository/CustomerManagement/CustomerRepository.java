@@ -37,6 +37,7 @@ public class CustomerRepository implements ICustomerRepository {
         customerList = ReadFile.readFileCustomer(PATH_CUSTOMER);
         customerList.add(customer);
         writeFile(customerList);
+        customerList.clear();
 
     }
 
@@ -60,5 +61,6 @@ public class CustomerRepository implements ICustomerRepository {
             }
         }
         writeFile(customerList);
+        customerList.clear();
     }
 }
