@@ -17,15 +17,13 @@ public class CustomerServlet extends HttpServlet {
         customerList.add(new Customer("Nguyễn Văn Nam", "1983-08-21","Sài Gòn", "https://scontent.fsgn2-5.fna.fbcdn.net/v/t1.15752-9/321148035_560557412810154_7908709642134926373_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=ae9488&_nc_ohc=Fn820XSS8W0AX8zRxjo&_nc_ht=scontent.fsgn2-5.fna&oh=03_AdRWTcR1UZQGd1h_TTHKwjoEg3xQ4gAmj6D-zTMvp0Dqbw&oe=640D544B"));
         customerList.add(new Customer("Nguyễn Thái Hòa", "1995-05-04","Huế", "https://scontent.fsgn2-5.fna.fbcdn.net/v/t31.18172-8/15326268_1816226141990948_3564166672928073271_o.jpg?_nc_cat=104&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=aNqztMe6OzkAX_os7iR&tn=1oqwERuHMXqCiusA&_nc_ht=scontent.fsgn2-5.fna&oh=00_AfBD1IyB9_dOHJIcXvcBrE2DNmPFjW70S9Vumdui_bXlRQ&oe=640D4804"));
         customerList.add(new Customer("Trần Đăng Khoa", "1995-11-20","Nha Trang", "https://ca.slack-edge.com/TEBPXS5HQ-U04MYC8SX6U-42fa24b834d5-512"));
-
     }
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.setAttribute("customerList", customerList);
         request.getRequestDispatcher("customer.jsp").forward(request,response);
-
     }
 }
