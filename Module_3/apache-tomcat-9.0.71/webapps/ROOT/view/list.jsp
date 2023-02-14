@@ -1,16 +1,15 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   User: K7
   Date: 2/14/2023
-  Time: 11:01 AM
+  Time: 5:02 PM
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!doctype html>
 <html lang="en">
 <head>
-    <title>Danh sách khách hàng</title>
+    <title>Title</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -20,28 +19,36 @@
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
-<table border="1">
-    <tr>
-        <td>Id</td>
-        <td>Name</td>
-        <td>Price</td>
-        <td>Status</td>
-        <td>Edit</td>
-        <td>Delete</td>
-    </tr>
-    <c:forEach items="${products}" var="product">
+<div class="text-center">
+    <h1>User Management</h1>
+    <h2>
+        <a href="/users?action=create">Add New User</a>
+    </h2>
+</div>
+<div align="center">
+    <table border="1" cellpadding="5">
+        <caption><h2>List of Users</h2></caption>
         <tr>
-            <td>${product.id}</td>
-            <td><a href="/products?action=view&id"${product.id}>${product.name}</a></td>
-            <td>${product.price}</td>
-            <td>${product.status}</td>
-            <td><a href="/products?action=update&id=${product.id}" class="btn btn-secondary">Update</a></td>
-            <td><a href="/products?action=delete&id=${product.id}" class="btn btn-secondary">Delete</a></td>
-
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Country</th>
+            <th>Actions</th>
         </tr>
-    </c:forEach>
-</table>
-<a href="/products?action=create"> Thêm mới </a>
+        <c:forEach var="user" items="${listUser}">
+            <tr>
+                <td><c:out value="${user.id}"/></td>
+                <td><c:out value="${user.name}"/></td>
+                <td><c:out value="${user.email}"/></td>
+                <td><c:out value="${user.country}"/></td>
+                <td>
+                    <a href="/users?action=edit&id=${user.id}">Edit</a>
+                    <a href="/users?action=delete&id=${user.id}">Delete</a>
+                </td>
+            </tr>
+        </c:forEach>
+    </table>
+</div>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
