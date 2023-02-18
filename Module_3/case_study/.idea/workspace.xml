@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f4adb8a9-c2f3-4384-ab6b-756669d22525" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../12.JDBC&amp;CRUD/bai_tap/manage_user/src/main/java/controller/UserServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../12.JDBC&amp;CRUD/bai_tap/manage_user/src/main/java/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../12.JDBC&amp;CRUD/bai_tap/manage_user/src/main/java/repository/BaseRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../12.JDBC&amp;CRUD/bai_tap/manage_user/src/main/java/repository/IUserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../12.JDBC&amp;CRUD/bai_tap/manage_user/src/main/java/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../12.JDBC&amp;CRUD/bai_tap/manage_user/src/main/java/service/IUserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../12.JDBC&amp;CRUD/bai_tap/manage_user/src/main/java/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../12.JDBC&amp;CRUD/bai_tap/manage_user/src/main/webapp/view/create.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../12.JDBC&amp;CRUD/bai_tap/manage_user/src/main/webapp/view/edit.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../12.JDBC&amp;CRUD/bai_tap/manage_user/src/main/webapp/view/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Giai_thuat/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Giai_thuat/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Giai_thuat/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Giai_thuat/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Giai_thuat/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Giai_thuat/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled/src/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled/untitled.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../11.MVC/Bai_tap/product/.gradle/6.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../11.MVC/Bai_tap/product/.gradle/6.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../11.MVC/Bai_tap/product/.gradle/6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../11.MVC/Bai_tap/product/.gradle/6.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../11.MVC/Bai_tap/product/.gradle/6.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../11.MVC/Bai_tap/product/.gradle/6.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../11.MVC/Bai_tap/product/.gradle/6.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../11.MVC/Bai_tap/product/.gradle/6.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../11.MVC/Bai_tap/product/.gradle/6.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../11.MVC/Bai_tap/product/.gradle/6.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../11.MVC/Bai_tap/product/.gradle/6.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../11.MVC/Bai_tap/product/.gradle/6.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../11.MVC/Bai_tap/product/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../11.MVC/Bai_tap/product/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../11.MVC/Bai_tap/product/build/classes/java/main/controller/ProductServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../11.MVC/Bai_tap/product/build/classes/java/main/controller/ProductServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../11.MVC/Bai_tap/product/build/libs/product-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/../11.MVC/Bai_tap/product/build/libs/product-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../11.MVC/Bai_tap/product/src/main/java/controller/ProductServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../11.MVC/Bai_tap/product/src/main/java/controller/ProductServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../12.JDBC&amp;CRUD/thuc_hanh/user-manager/.gradle/6.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../12.JDBC&amp;CRUD/thuc_hanh/user-manager/.gradle/6.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../12.JDBC&amp;CRUD/thuc_hanh/user-manager/.gradle/6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../12.JDBC&amp;CRUD/thuc_hanh/user-manager/.gradle/6.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../12.JDBC&amp;CRUD/thuc_hanh/user-manager/.gradle/6.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../12.JDBC&amp;CRUD/thuc_hanh/user-manager/.gradle/6.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../12.JDBC&amp;CRUD/thuc_hanh/user-manager/.gradle/6.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../12.JDBC&amp;CRUD/thuc_hanh/user-manager/.gradle/6.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../12.JDBC&amp;CRUD/thuc_hanh/user-manager/.gradle/6.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../12.JDBC&amp;CRUD/thuc_hanh/user-manager/.gradle/6.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../12.JDBC&amp;CRUD/thuc_hanh/user-manager/.gradle/6.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../12.JDBC&amp;CRUD/thuc_hanh/user-manager/.gradle/6.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../12.JDBC&amp;CRUD/thuc_hanh/user-manager/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../12.JDBC&amp;CRUD/thuc_hanh/user-manager/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../12.JDBC&amp;CRUD/thuc_hanh/user-manager/build/classes/java/main/controller/UserServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../12.JDBC&amp;CRUD/thuc_hanh/user-manager/build/classes/java/main/controller/UserServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../12.JDBC&amp;CRUD/thuc_hanh/user-manager/build/classes/java/main/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/../12.JDBC&amp;CRUD/thuc_hanh/user-manager/build/classes/java/main/model/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../12.JDBC&amp;CRUD/thuc_hanh/user-manager/build/classes/java/main/repository/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/../12.JDBC&amp;CRUD/thuc_hanh/user-manager/build/classes/java/main/repository/UserRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../12.JDBC&amp;CRUD/thuc_hanh/user-manager/build/classes/java/main/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../12.JDBC&amp;CRUD/thuc_hanh/user-manager/build/classes/java/main/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../12.JDBC&amp;CRUD/thuc_hanh/user-manager/build/libs/user-manager-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/../12.JDBC&amp;CRUD/thuc_hanh/user-manager/build/libs/user-manager-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../12.JDBC&amp;CRUD/thuc_hanh/user-manager/src/main/java/controller/UserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../12.JDBC&amp;CRUD/thuc_hanh/user-manager/src/main/java/controller/UserServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../12.JDBC&amp;CRUD/thuc_hanh/user-manager/src/main/java/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../12.JDBC&amp;CRUD/thuc_hanh/user-manager/src/main/java/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../12.JDBC&amp;CRUD/thuc_hanh/user-manager/src/main/java/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../12.JDBC&amp;CRUD/thuc_hanh/user-manager/src/main/java/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../12.JDBC&amp;CRUD/thuc_hanh/user-manager/src/main/java/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../12.JDBC&amp;CRUD/thuc_hanh/user-manager/src/main/java/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../12.JDBC&amp;CRUD/thuc_hanh/user-manager/src/main/webapp/view/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../12.JDBC&amp;CRUD/thuc_hanh/user-manager/src/main/webapp/view/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DB Furama/db_furama_completed.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../DB Furama/db_furama_completed.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DB Furama/task 16 - 20.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../DB Furama/task 16 - 20.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../apache-tomcat-9.0.71/webapps/ROOT/WEB-INF/classes/controller/UserServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../apache-tomcat-9.0.71/webapps/ROOT/WEB-INF/classes/controller/UserServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../apache-tomcat-9.0.71/webapps/ROOT/WEB-INF/classes/repository/IUserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/../apache-tomcat-9.0.71/webapps/ROOT/WEB-INF/classes/repository/IUserRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../apache-tomcat-9.0.71/webapps/ROOT/WEB-INF/classes/repository/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/../apache-tomcat-9.0.71/webapps/ROOT/WEB-INF/classes/repository/UserRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../apache-tomcat-9.0.71/webapps/ROOT/WEB-INF/classes/service/IUserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../apache-tomcat-9.0.71/webapps/ROOT/WEB-INF/classes/service/IUserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../apache-tomcat-9.0.71/webapps/ROOT/WEB-INF/classes/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../apache-tomcat-9.0.71/webapps/ROOT/WEB-INF/classes/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../apache-tomcat-9.0.71/webapps/ROOT/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../apache-tomcat-9.0.71/webapps/ROOT/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../apache-tomcat-9.0.71/webapps/ROOT/view/create.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../apache-tomcat-9.0.71/webapps/ROOT/view/create.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../apache-tomcat-9.0.71/webapps/ROOT/view/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../apache-tomcat-9.0.71/webapps/ROOT/view/list.jsp" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="2Lm7EcaEfzS3zHSzxNb9a91ikqm" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f4adb8a9-c2f3-4384-ab6b-756669d22525" name="Default Changelist" comment="" />
+      <created>1676464293853</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1676464293853</updated>
+      <workItem from="1676464301764" duration="355000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
