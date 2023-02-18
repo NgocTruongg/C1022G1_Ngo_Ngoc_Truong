@@ -40,7 +40,7 @@
         <td>${book.category}</td>
         <td>
 <%--            Thêm href để chỉnh sửa     --%>
-            <a href="">Edit</a>
+            <a href="/books?action=edit&id=${book.id}">Edit</a>
         </td>
         <td>
             <!-- Button trigger modal -->
@@ -75,7 +75,7 @@
     </table>
 <table>
 <%--    Thêm href để chuyển hướng qua showCreateForm--%>
-    <h3><a href="">Thêm mới sách</a></h3>
+    <h3><a href="/books?action=create">Thêm mới sách</a></h3>
 </table>
 </form>
 <!-- Optional JavaScript -->
